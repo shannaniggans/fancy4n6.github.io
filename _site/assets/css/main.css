@@ -1,5 +1,7 @@
 body { background: #000000; color: #33ff00; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; }
 
+.container { background-color: black; margin-left: 10%; margin-right: 10%; }
+
 .line { margin: 5px 0; height: 20px; background: repeating-linear-gradient(to right, #33ff00 0, #33ff00 10px, transparent 10px, transparent 12px) bottom; background-size: 100% 2px; background-repeat: no-repeat; }
 
 .links th, .links td, .links tr { border-collapse: collapse; vertical-align: top; border-bottom: 2px dotted #33ff00; padding-left: 20px; padding-right: 20px; padding-bottom: 15px; }
