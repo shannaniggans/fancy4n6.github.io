@@ -2,3 +2,5 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "./Fancy Forensics" # the name of your site, e.g. ACME Corp.
 description: "Digital forensics & incident response research and writeups"
+markdown: GFM
+highlighter: rouge
