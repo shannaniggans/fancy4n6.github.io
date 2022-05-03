@@ -6,6 +6,9 @@
     <title>{{ page.title }} - {{ site.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   </head>
+  <header div class="topnav">
+    {% include navigation.html %}
+  </header>
   <body>
     {{ content }}
   </body>

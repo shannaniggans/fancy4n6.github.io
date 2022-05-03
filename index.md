@@ -1,8 +1,15 @@
 ---
 layout: default
-title: "Happy Jekylling!"
+title: "Home"
 ---
 
-## You're ready to go!
+<h1>Latest Posts</h1>
 
-Start developing your Jekyll website.
+<ul>
+    {% for post in site.posts %}
+    <li>
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        {{ post.excerpt }}
+    </li>
+    {% endfor %}
+</ul>
