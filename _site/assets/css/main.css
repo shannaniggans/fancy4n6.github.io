@@ -6,7 +6,9 @@ td { color: #DDF0FF; }
 
 tr { border-bottom: 2px dotted #33ff00; }
 
-h1, h2, h3, h4, h5, h6 { font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; }
+h1, h2, h3, h4, h5, h6 { letter-spacing: -0.07em; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; }
+
+pre code { background-color: #012456; color: white; display: block; padding: 10px; }
 
 /* the div class="container" is to set that size of the main part of the site  It's set in the header, body and footer*/
 .container { background-color: #222222; margin-left: 20%; margin-right: 20%; padding: 5px 25px 5px 25px; }

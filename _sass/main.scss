@@ -23,12 +23,20 @@ tr {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Monaco,
+  letter-spacing: -0.07em;
+  font-family: Monaco,
     "Bitstream Vera Sans Mono",
     "Lucida Console",
     Terminal,
     monospace;
 }
+
+pre code {
+  background-color: #012456;
+  color: white;
+  display: block;
+  padding: 10px;
+  }
 
 
 
