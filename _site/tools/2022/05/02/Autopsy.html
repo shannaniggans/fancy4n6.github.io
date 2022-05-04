@@ -53,7 +53,12 @@
 
   <body>
     <div class="container">
-      <body>
+      <h6>Published: May 2, 2022</h6>
+<h6>Last Updated: </h6>
+
+
+
+<body>
         <p>It can seem daunting when starting out in DFIR and looking at all the tools and how much money might need to be expended to get a lab set up to even practice. But don’t despair, there are plenty of open source and free tools available that you can use.</p>
 
 <p>There is even a fantastic book been released called <a href="https://www.amazon.com.au/Digital-Forensics-Open-Source-Tools">“Digital Forensics with Open Source Tools”</a></p>
@@ -66,7 +71,7 @@
 
 <p>This is my set up and instructions for running Autopsy in a test environment for my purposes.</p>
 
-<h1 id="table-of-contents">Table of Contents</h1>
+<h2 id="table-of-contents">Table of Contents</h2>
 <ol>
   <li><a href="#MyBaseSystem">My Base System</a></li>
   <li><a href="#InstallAutopsy">Install Autopsy</a></li>
@@ -78,7 +83,7 @@
   </li>
 </ol>
 
-<h1 id="my-base-system-">My base system <a name="MyBaseSystem"></a></h1>
+<h2 id="my-base-system-">My base system <a name="MyBaseSystem"></a></h2>
 
 <p>First up, I am running Autopsy on a laptop. The following are the specs.</p>
 <table>
@@ -116,7 +121,7 @@
    </tbody>
 </table>
 
-<h1 id="download-and-install-the-latest-version-of-autopsy-">Download and install the latest version of Autopsy <a name="InstallAutopsy"></a></h1>
+<h2 id="download-and-install-the-latest-version-of-autopsy-">Download and install the latest version of Autopsy <a name="InstallAutopsy"></a></h2>
 
 <p>Autopsy doesn’t upgrade, it installs the next version alongside the old one. Remove the older version when you are happy the new version is working for you. This can be handy to test if there is a problem.</p>
 <ul>
@@ -130,7 +135,7 @@
 
 <p>You generally find that the biggest bottle neck with forensics is the disk speed, so a high quality fast SSD is the best to be running any DFIR with.</p>
 
-<h1 id="turn-on-wal-journaling-to-speed-up-single-case-mode-">Turn on Wal journaling to speed up Single Case Mode <a name="WalJournaling"></a></h1>
+<h2 id="turn-on-wal-journaling-to-speed-up-single-case-mode-">Turn on Wal journaling to speed up Single Case Mode <a name="WalJournaling"></a></h2>
 
 <p>This is a tip that <a href="https://github.com/markmckinnon">Mark McKinnon</a> shared with me.</p>
 <ol>
@@ -146,7 +151,7 @@
       <li> Open the case that you just created and add your data sources as normal.</li>
    </ol>
 
-<h1 id="adding-python-plugins-">Adding Python Plugins <a name="PythonPlugins"></a></h1>
+<h2 id="adding-python-plugins-">Adding Python Plugins <a name="PythonPlugins"></a></h2>
 
 <p>These plugins greatly increase the number of ingest parsers that can run by Autopsy.</p>
 <ol>
@@ -156,7 +161,7 @@
    <li>Clone Mark's python plugin <a href="https://github.com/markmckinnon/Autopsy-Plugins">repository</a>. I typically do this somewhere outside of Autopsy and copy the ones I am going to run, but that isn't necessary.</li>
 </ol>
 
-<h2 id="running-parseevtx-python-ingest-module-">Running ParseEvtx Python Ingest Module <a name="Parse_Evtx"></a></h2>
+<h3 id="running-parseevtx-python-ingest-module-">Running ParseEvtx Python Ingest Module <a name="Parse_Evtx"></a></h3>
 <ul>
    <li>If you add the name of an event log under other, you must add the name and THEN check the other box. To be sure I check it on then off and then on again. Separate the names with a comma.</li></ul>
 
