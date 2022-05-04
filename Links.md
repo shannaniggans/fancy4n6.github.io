@@ -1,7 +1,7 @@
 ---
-permalink: /DFIR-Links
-layout: default
-title: "DFIR Reading & Training"
+permalink: /links/
+layout: page
+title: "DFIR Reading & Training Links"
 ---
 
 <h1>{{page.title}}</h1>

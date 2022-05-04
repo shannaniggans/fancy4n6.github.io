@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Getting started with Autopsy - Fancy Forensics</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    
+    <!-- Google analytics information in _includes/analytics.html -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV2F0X9QJ6"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-WV2F0X9QJ6');
+</script>
+  </head>
+
+<!-- the following div class is to add the green dotted line -->
+<div class="line"></div>
+
+  <header>
+    <div class="container">
+      <div class="header">
+        <h1>
+          Fancy Forensics
+        </h1>
+        <h2>
+          Digital forensics & incident response research and writeups
+        </h2>
+            <nav>
+    
+    <a href="/" >
+        Home
+    </a>
+    
+    <a href="/tools" >
+        Tools
+    </a>
+    
+    <a href="/links/" >
+        Reading List
+    </a>
+    
+</nav>
+      </div>
+    </div>
+  </header>
+
+<div class="line"></div>
+
+  <body>
+    <div class="container">
+      <body>
+        <p>It can seem daunting when starting out in DFIR and looking at all the tools and how much money might need to be expended to get a lab set up to even practice. But don’t despair, there are plenty of open source and free tools available that you can use. There is even a fantastic book been released called <a href="https://www.amazon.com.au/Digital-Forensics-Open-Source-Tools">“Digital Forensics with Open Source Tools”</a></p>
+
+<p>In the Tools section of this site I’ll be walking through the set up of the tools that I use in my CTFs, research and anything that I’m playing with that might be helpful.</p>
+
+<blockquote>
+  <p><a href="https://www.autopsy.com/">Autopsy®</a> is the premier end-to-end open source digital forensics platform. Built by Basis Technology with the core features you expect in commercial forensic tools, Autopsy is a fast, thorough, and efficient hard drive investigation solution that evolves with your needs.</p>
+</blockquote>
+
+<p>This is my set up and instructions for running Autopsy in a test environment for my purposes.</p>
+
+<h1 id="table-of-contents">Table of Contents</h1>
+<ol>
+  <li><a href="#MyBaseSystem">My Base System</a></li>
+  <li><a href="#InstallAutopsy">Install Autopsy</a></li>
+  <li><a href="#WalJournaling">Turn on WAL Journaling</a></li>
+  <li><a href="#PythonPlugins">Python Plugins</a>
+    <ul>
+      <li><a href="#Parse_Evtx">ParseEvtx</a></li>
+    </ul>
+  </li>
+</ol>
+
+<h1 id="my-base-system-">My base system <a name="MyBaseSystem"></a></h1>
+
+<p>First up, I am running Autopsy on a laptop. The following are the specs.</p>
+<table>
+   <colgroup>
+      <col width="30%" />
+      <col width="70%" />
+   </colgroup>
+   <thead>
+      <tr>
+      <th>Field</th>
+      <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+      <td><strong>OS Name</strong></td>
+      <td>Microsoft Windows 11 Pro </td>
+      </tr>
+      <tr>
+      <td><strong>Version</strong></td>
+      <td>10.0.22581 Build 22581</td>
+      </tr>
+      <tr>
+      <td><strong>Processor</strong></td>
+      <td>Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz, 2592 Mhz, 6 Core(s), 12 Logical Processor(s)</td>
+      </tr>
+      <tr>
+      <td><strong>Installed Physical Memory (RAM)</strong></td>
+      <td>32GB</td>
+      </tr>
+      <tr>
+      <td><strong>Page File Space</strong></td>
+      <td>4.75GB</td>
+      </tr>
+   </tbody>
+</table>
+
+<h1 id="download-and-install-the-latest-version-of-autopsy-">Download and install the latest version of Autopsy <a name="InstallAutopsy"></a></h1>
+
+<p>Autopsy doesn’t upgrade, it installs the next version alongside the old one. Remove the older version when you are happy the new version is working for you. This can be handy to test if there is a problem.</p>
+<ul>
+   <li><a href="https://github.com/sleuthkit/autopsy/releases/download/autopsy-4.19.3/autopsy-4.19.3-64bit.msi">Autopsy 4.19.3</a></li>
+   <li><a href="https://github.com/sleuthkit/autopsy/releases/download/autopsy-4.19.0/autopsy-4.19.0-64bit.msi">Autopsy 4.19.0</a></li>
+   </ul>
+
+<p>You can install both versions of Autopsy side-by-side.</p>
+
+<p>I’ve installed into C:\Program Files\Autopsy-4.19.3\ on a 1TB (onboard) SSD.</p>
+
+<p>You generally find that the biggest bottle neck with forensics is the disk speed, so a high quality fast SSD is the best to be running any DFIR with.</p>
+
+<h1 id="turn-on-wal-journaling-to-speed-up-single-case-mode-">Turn on Wal journaling to speed up Single Case Mode <a name="WalJournaling"></a></h1>
+
+<p>This is a tip that <a href="https://github.com/markmckinnon">Mark McKinnon</a> shared with me.</p>
+<ol>
+      <li>Download an SQLite database editor. SQLite Spy for example.</li>
+      <li>Open Autopsy and create a new case.</li>
+      <li>Fill out all information to create the new case.</li>
+      <li>Once you get to the step of adding a data source to the case cancel it by hitting the cancel button.  The case has been created and ready to get the journaling mode changed from delete to Wal. (ref - <a href="https://github.com/sleuthkit/autopsy/issues/2518)">sleuthkit/autopsy#2518</a>)</li>
+      <li>Run SQLiteSpy</li>
+      <li>Open Database &gt; Browse to the case folder and open Autopsy.db</li>
+      <li>Issue the following SQL command: Pragma Journal_Mode='wal' and execute it.  </li>
+      <li>You should see that the journal mode is now wal.</li>
+      <li>Close the database and close your SQLite editor.</li>
+      <li> Open the case that you just created and add your data sources as normal.</li>
+   </ol>
+
+<h1 id="adding-python-plugins-">Adding Python Plugins <a name="PythonPlugins"></a></h1>
+
+<p>These plugins greatly increase the number of ingest parsers that can run by Autopsy.</p>
+<ol>
+   <li>Open Autopsy.</li>
+   <li>Go to Tools &gt; Python Plugins.</li>
+   <li>This will open the directory where the plugins should reside - C:\Users\<i>username</i>\AppData\Roaming\autopsy\python_modules.</li>
+   <li>Clone Mark's python plugin <a href="https://github.com/markmckinnon/Autopsy-Plugins">repository</a>. I typically do this somewhere outside of Autopsy and copy the ones I am going to run, but that isn't necessary.</li>
+</ol>
+
+<h2 id="running-parseevtx-python-ingest-module-">Running ParseEvtx Python Ingest Module <a name="Parse_Evtx"></a></h2>
+<ul>
+   <li>If you add the name of an event log under other, you must add the name and THEN check the other box. To be sure I check it on then off and then on again. Separate the names with a comma.</li></ul>
+
+<p><img src="imgs/Autopsy_parse_evtx_other.png" alt="ParseEVTX" /></p>
+
+<ul>
+   <li>You know it's worked when you get the logs in Autopsy OR you check the log file and the list of names appears next to "Other".</li></ul>
+
+<p><img src="imgs/2022-04-01-05-08-51.png" alt="Autopsy logs" /></p>
+
+</body>
+    </div>
+  </body>
+  
+<!-- a dotted line and then we have the footer -->
+  <div class="line"></div>
+  <footer>
+    <div class="container">
+      <footer>
+    Footer: Will put something in here at some point.
+</footer>
+    </div>
+  </footer>
+    
+</html>

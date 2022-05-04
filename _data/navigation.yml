@@ -1,4 +1,6 @@
 - name: Home
   link: /
+- name: Tools
+  link: /tools
 - name: Reading List
-  link: /DFIR-Links
+  link: /links/

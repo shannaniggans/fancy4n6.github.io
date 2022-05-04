@@ -4,21 +4,42 @@ $bodyColor: #33ff00;
 body {
   background: $backgroundColor;
   color: $bodyColor;
-  font-family: Monaco,
-  "Bitstream Vera Sans Mono",
-  "Lucida Console",
-  Terminal,
-  monospace;
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  font-family: 'Roboto',
+  sans-serif;
+  text-align: justify;
 }
 
+p, li {
+  color:#DDF0FF;
+}
+
+td {
+  color:#DDF0FF;
+}
+tr {
+  border-bottom: 2px dotted #33ff00;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Monaco,
+    "Bitstream Vera Sans Mono",
+    "Lucida Console",
+    Terminal,
+    monospace;
+}
+
+/* the div class="container" is to set that size of the main part of the site 
+  It's set in the header, body and footer*/
 .container {
-  background-color: black;
-  margin-left:10%;
-  margin-right:10%;
+  background-color: #222222;
+  margin-left:20%;
+  margin-right:20%;
+  padding: 5px 25px 5px 25px;
 }
 
 .line {
-  margin: 5px 0;
+  margin: 2px 0;
   height: 20px;
   background:
     repeating-linear-gradient(to right, #33ff00 0, #33ff00 10px, transparent 10px, transparent 12px) bottom;
@@ -37,4 +58,51 @@ body {
         padding-right: 20px;
         padding-bottom: 15px;
       }
+}
+
+/*Formatting for quotes in posts and pages*/
+blockquote {
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote p {
+  display: inline;
+}
+
+/* Header specific css */
+.header a {
+  background-color: #DDF0FF;
+  color: #223127;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.header a:hover {
+  color: #DBBBF5;
+  text-decoration: none;
+}
+
+.header a:active {
+  color: #9C0D38;
+  text-decoration: none;
+}
+
+/* Font and links for the whole site */
+a {
+  color:#59C9A5;
+  text-decoration: none;
+}
+a:hover {
+  color: #DBBBF5;
+  text-decoration: none;
+}
+
+a:active {
+  color: #9C0D38;
+  text-decoration: none;
 }

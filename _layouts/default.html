@@ -5,20 +5,25 @@
     <meta charset="utf-8">
     <title>{{ page.title }} - {{ site.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    
+    <!-- Google analytics information in _includes/analytics.html -->
     {% include analytics.html %}
   </head>
 
+<!-- the following div class is to add the green dotted line -->
 <div class="line"></div>
 
   <header>
     <div class="container">
-      <h1>
-        {{ site.title }}
-      </h1>
-      <h2>
-        {{ site.description }}
-      </h2>
-          {% include navigation.html %}
+      <div class="header">
+        <h1>
+          {{ site.title }}
+        </h1>
+        <h2>
+          {{ site.description }}
+        </h2>
+            {% include navigation.html %}
+      </div>
     </div>
   </header>
 
@@ -29,4 +34,13 @@
       {{ content }}
     </div>
   </body>
+  
+<!-- a dotted line and then we have the footer -->
+  <div class="line"></div>
+  <footer>
+    <div class="container">
+      {% include footer.html %}
+    </div>
+  </footer>
+    
 </html>
