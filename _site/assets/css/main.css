@@ -1,7 +1,7 @@
 @charset "UTF-8";
-body { background: #000000; color: #33ff00; @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap"); font-family: 'Roboto', sans-serif; text-align: justify; }
+body { background: #000000; color: #33ff00; @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap"); font-family: 'Roboto', sans-serif; }
 
-p, li { color: #DDF0FF; }
+p, li { color: #DDF0FF; text-align: justify; }
 
 td { color: #DDF0FF; }
 
@@ -11,6 +11,8 @@ h1, h2, h3, h4, h5, h6 { font-family: Monaco, "Bitstream Vera Sans Mono", "Lucid
 
 /* the div class="container" is to set that size of the main part of the site  It's set in the header, body and footer*/
 .container { background-color: #222222; margin-left: 20%; margin-right: 20%; padding: 5px 25px 5px 25px; }
+
+.container img { display: block; margin-left: auto; margin-right: auto; width: 80%; }
 
 .line { margin: 2px 0; height: 20px; background: repeating-linear-gradient(to right, #33ff00 0, #33ff00 10px, transparent 10px, transparent 12px) bottom; background-size: 100% 2px; background-repeat: no-repeat; }
 

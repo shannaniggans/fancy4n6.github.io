@@ -7,11 +7,12 @@ body {
   @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
   font-family: 'Roboto',
   sans-serif;
-  text-align: justify;
+
 }
 
 p, li {
   color:#DDF0FF;
+  text-align: justify;
 }
 
 td {
@@ -29,6 +30,8 @@ h1, h2, h3, h4, h5, h6 {
     monospace;
 }
 
+
+
 /* the div class="container" is to set that size of the main part of the site 
   It's set in the header, body and footer*/
 .container {
@@ -36,6 +39,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-left:20%;
   margin-right:20%;
   padding: 5px 25px 5px 25px;
+}
+
+.container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 
 .line {
