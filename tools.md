@@ -7,9 +7,9 @@ title: "Home"
 
 <div class="posts">
   {% for post in site.categories['Tools'] %}
-      <h1>
+      <h2>
           <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      </h1>
+      </h2>
       <div>
         <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
       </div>
