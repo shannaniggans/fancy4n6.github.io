@@ -3,6 +3,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 title: "./Fancy Forensics" # the name of your site, e.g. ACME Corp.
 description: "Digital forensics & incident response research and writeups"
 highlighter: rouge
-markdown: kramdown
+markdown: redcarpet
 plugins:
   - jekyll-feed
