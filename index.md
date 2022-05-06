@@ -9,7 +9,8 @@ permalink: /
 <ul>
     {% for post in site.posts %}
     <li><h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        {{ post.date }}
+        {%- assign date_format = site.minima.date_format | default: '%b %-d, %Y' -%}
+        <h6>Published: {{ page.date | date: date_format }}</h6>
         {{ post.excerpt }}
     </li>
     {% endfor %}
