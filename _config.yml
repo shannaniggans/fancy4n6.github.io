@@ -4,3 +4,5 @@ title: "./Fancy Forensics" # the name of your site, e.g. ACME Corp.
 description: "Digital forensics & incident response research and writeups"
 highlighter: rouge
 markdown: kramdown
+plugins:
+  - jekyll-feed
