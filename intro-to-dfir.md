@@ -5,4 +5,5 @@ title: "Introduction to DFIR"
 ---
 
 <a href="/assets/DFIR101 - Lab Resources.pdf">Lab resources</a>
-CTF Walk-through - 
+<a href="">CTF Walk-through</a>
+
