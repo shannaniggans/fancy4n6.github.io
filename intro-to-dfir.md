@@ -4,6 +4,6 @@ layout: default
 title: "Introduction to DFIR"
 ---
 
-<a href="/assets/DFIR101 - Lab Resources.pdf">Lab resources</a>
-<a href="">CTF Walk-through</a>
+<p><a href="/assets/DFIR101 - Lab Resources.pdf">Lab resources</a></p>
+<p><a href="">CTF Walk-through</a></p>
 
