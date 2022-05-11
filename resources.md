@@ -28,11 +28,11 @@ title: "DFIR Reading & Training Resources"
 <table><tbody>
   <tr> 
     <td><h4><b><a href="https://discord.com/invite/crH7RQeJZz">ComfyCon Discord</a></b></h4></td>
-    <td></td>
+    <td>ComfyCon AU was originally constructed as a conference in March 2020 as a response to the cancellation of Cyber Security conferences due to the COVID-19 pandemic.</td>
   </tr>
     <tr> 
       <td><h4><b><a href="https://discord.gg/digitalforensics">Digital Forensics Discord</a></b></h4></td>
-    <td>
+    <td>A Discord server ran by and for the DFIR Community!
       </td>
   </tr>
 </tbody></table>
@@ -78,33 +78,63 @@ title: "DFIR Reading & Training Resources"
   
 <h3>Free Online Training</h3>
 <table><tbody>  
+         <tr> 
+      <td><h4><b><a href="https://freetraining.dfirdiva.com/free-ir-training-plan">DFIR Diva Free IR Training Plan</a></b></h4></td>
+    <td></td>
+  </tr>
    <tr> 
       <td><h4><b><a href="https://archive.org/details/HalLinuxForensics">Hal Pomeranz's Linux Forensics Intro</a></b></h4></td>
     <td>Course materials and lab virtual machine for introductory course in Linux Forensics</td>
   </tr>
      <tr> 
       <td><h4><b><a href="https://cyberdefenders.org/">CyberDefenders: Blue Team CTF Challenges</a></b></h4></td>
+    <td>Free signup and access to the challenges</td>
+  </tr>
+       <tr> 
+      <td><h4><b><a href="https://archive.org/details/HalSELinux">Hal Pomeranz Intro to SELinux</a></b></h4></td>
+    <td>Course materials and lab virtual machine for an introductory course on SELinux</td>
+  </tr>
+       <tr> 
+      <td><h4><b><a href="https://www.cybrary.it/course/application-of-the-mitre-attack-framework/">MITRE ATT&CK Training and Certification</a></b></h4></td>
+    <td></td>
+  </tr>
+   <tr> 
+      <td><h4><b><a href="https://freetraining.dfirdiva.com/free-malware-analysis-re-training">DFIR Diva Free Malware Analysis & RE Training Plan</a></b></h4></td>
     <td></td>
   </tr>
        <tr> 
+      <td><h4><b><a href="https://malwareunicorn.org/workshops/re101.html#0">Malware Unicorn’s Reverse Engineering 101</a></b></h4></td>
+    <td></td>
+  </tr>
+  
+         <tr> 
+      <td><h4><b><a href="https://www.splunk.com/en_us/training/free-courses/splunk-fundamentals-1.html)">Splunk Fundamentals 1</a></b></h4></td>
+    <td></td>
+  </tr>
+  
+         <tr> 
+      <td><h4><b><a href="https://maxkersten.nl/binary-analysis-course/">Binary Analysis Course</a></b></h4></td>
+    <td></td>
+  </tr>
+  
+         <tr> 
+      <td><h4><b><a href="https://blueteamlabs.online/">Blue Team Labs Online</a></b></h4></td>
+    <td>A gamified platform for defenders to practice their skills in security investigations and challenges covering; Incident Response, Digital Forensics, Security Operations, Reverse Engineering, and Threat Hunting.<br>Free and paid tiers available.</td>
+  </tr>
+  
+           <tr> 
+      <td><h4><b><a href="https://tryhackme.com/">TryHackMe Cyber Security Training</a></b></h4></td>
+    <td>TryHackMe goes way beyond textbooks and focuses on fun interactive lessons that make you put theory into practice. You'll get an immersive learning experience with network simulations, intentionally vulnerable technology based on real world examples and more.</td>
+  </tr>
+  
+           <tr> 
       <td><h4><b><a href=""></a></b></h4></td>
     <td></td>
   </tr>
-       <tr> 
-      <td><h4><b><a href=""></a></b></h4></td>
-    <td></td>
-  </tr>
-       <tr> 
-      <td><h4><b><a href=""></a></b></h4></td>
-    <td></td>
-  </tr>
-       <tr> 
-      <td><h4><b><a href=""></a></b></h4></td>
-    <td></td>
-  </tr>
-       <tr> 
-      <td><h4><b><a href=""></a></b></h4></td>
-    <td></td>
+  
+           <tr> 
+      <td><h4><b><a href="ttps://techcommunity.microsoft.com/t5/azure-sentinel/become-an-azure-sentinel-ninja-the-complete-level-400-training/ba-p/1246310">Become a Microsoft Sentinel Ninja: The complete level 400 training</a></b></h4></td>
+    <td>This training program includes 16 modules. The post includes a presentation for each module, and supporting information: relevant product documentation, blog posts, and other resources.</td>
   </tr>
   </tbody></table>
   
