@@ -20,7 +20,7 @@ title: "DFIR Reading & Training Resources"
       </td>
   </tr>
     <tr> 
-      <td><h4><b><ahref="https://darknetdiaries.com/">Darknet Diaries</a></b></h4></td>
+      <td><h4><b><a href="https://darknetdiaries.com/">Darknet Diaries</a></b></h4></td>
     <td>True stories from the dark side of the Internet. This is a podcast about hackers, breaches, shadow government activity, hacktivism, cybercrime, and all the things that dwell on the hidden parts of the network.
       </td>
   </tr>
@@ -29,30 +29,33 @@ title: "DFIR Reading & Training Resources"
 
 
 
-<h2>Free Online Training</h2>
+<h2>Books</h2>
 <table><tbody>
       <tr> 
-      <td><h4><b><ahref=""></a></b></h4></td>
+      <td><h4><b><a href=""></a></b></h4></td>
+    <td>
+      </td>
+  </tr>
+      <tr> 
+      <td><h4><b><a href=""></a></b></h4></td>
     <td>
       </td>
   </tr>
         <tr> 
-      <td><h4><b><ahref=""></a></b></h4></td>
+      <td><h4><b><a href=""></a></b></h4></td>
     <td>
       </td>
   </tr>
         <tr> 
-      <td><h4><b><ahref=""></a></b></h4></td>
+      <td><h4><b><a href=""></a></b></h4></td>
     <td>
       </td>
   </tr>
         <tr> 
-      <td><h4><b><ahref=""></a></b></h4></td>
+      <td><h4><b><a href=""></a></b></h4></td>
     <td>
       </td>
   </tr>
-    
-  
   
   
   
