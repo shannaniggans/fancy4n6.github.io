@@ -23,7 +23,20 @@ title: "DFIR Reading & Training Resources"
       </td>
   </tr>
 </tbody></table>
- 
+  
+ <h2>Communities</h2>
+<table><tbody>
+  <tr> 
+    <td><h4><b><a href="https://discord.com/invite/crH7RQeJZz">ComfyCon Discord</a></b></h4></td>
+    <td></td>
+  </tr>
+    <tr> 
+      <td><h4><b><a href="https://discord.gg/digitalforensics">Digital Forensics Discord</a></b></h4></td>
+    <td>
+      </td>
+  </tr>
+</tbody></table>
+  
 <h2>Books & Reading Materials</h2>
   <h3>Industry Reports</h3>
 <table><tbody>
@@ -63,6 +76,38 @@ title: "DFIR Reading & Training Resources"
   </tr>
  </tbody></table>
   
+<h3>Free Online Training</h3>
+<table><tbody>  
+   <tr> 
+      <td><h4><b><a href="https://archive.org/details/HalLinuxForensics">Hal Pomeranz's Linux Forensics Intro</a></b></h4></td>
+    <td>Course materials and lab virtual machine for introductory course in Linux Forensics</td>
+  </tr>
+     <tr> 
+      <td><h4><b><a href="https://cyberdefenders.org/">CyberDefenders: Blue Team CTF Challenges</a></b></h4></td>
+    <td></td>
+  </tr>
+       <tr> 
+      <td><h4><b><a href=""></a></b></h4></td>
+    <td></td>
+  </tr>
+       <tr> 
+      <td><h4><b><a href=""></a></b></h4></td>
+    <td></td>
+  </tr>
+       <tr> 
+      <td><h4><b><a href=""></a></b></h4></td>
+    <td></td>
+  </tr>
+       <tr> 
+      <td><h4><b><a href=""></a></b></h4></td>
+    <td></td>
+  </tr>
+       <tr> 
+      <td><h4><b><a href=""></a></b></h4></td>
+    <td></td>
+  </tr>
+  </tbody></table>
+  
   <h3>Other Books</h3>
 <table><tbody>  
    <tr> 
@@ -74,7 +119,5 @@ title: "DFIR Reading & Training Resources"
     <td></td>
   </tr>
   </tbody></table>
-  
-
 
   </div>
