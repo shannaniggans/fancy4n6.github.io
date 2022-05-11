@@ -81,6 +81,7 @@ pre code {
       th,
       td,
       tr {
+        table-layout:fixed;
         border-collapse: collapse;
         vertical-align: top;
         border-top: 1px dotted #33ff00;
@@ -89,6 +90,8 @@ pre code {
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 5px;
+        width:30%;
+        
       }
 }
 
