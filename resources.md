@@ -11,8 +11,7 @@ title: "DFIR Reading & Training Resources"
 <table><tbody>
   <tr> 
     <td><h4><b><a href="https://thisweekin4n6.com/podcast/">This Week in 4n6</a></b></h4></td>
-    <td>This Week in 4n6 is a collection of everything that happens on a weekly basis in the Digital Forensics and Incident Response community.
-      </td>
+    <td>This Week in 4n6 is a collection of everything that happens on a weekly basis in the Digital Forensics and Incident Response community.</td>
   </tr>
     <tr> 
       <td><h4><b><a href="https://risky.biz/">Risky Business</a></b></h4></td>
@@ -29,140 +28,55 @@ title: "DFIR Reading & Training Resources"
 
 
 
-<h2>Books</h2>
+<h2>Books & Reading Materials</h2>
+  <h3> Industry Reports </h3>
 <table><tbody>
       <tr> 
-      <td><h4><b><a href=""></a></b></h4></td>
+      <td><h4><b><a href="https://www.verizon.com/business/en-au/resources/reports/dbir/)">Verizon DBIR</a></b></h4></td>
     <td>
       </td>
   </tr>
       <tr> 
-      <td><h4><b><a href=""></a></b></h4></td>
-    <td>
-      </td>
+      <td><h4><b><a href="https://www.mandiant.com/sites/default/files/2021-09/mandiant-apt1-report.pdf">Mandiant APT1 Report</a></b></h4></td>
+    <td>APT1 is one of dozens of threat groups Mandiant tracks around the world and we consider it to be one of the most prolific in terms of the sheer quantity of information it has stolen.</td>
+  </tr>
+  </table>
+   <h3> "Text" Books </h3>
+<table><tbody>
+        <tr> 
+      <td><h4><b><a href="https://www.amazon.com.au/gp/product/B004W7DO78/ref=ppx_yo_dt_b_d_asin_title_o00?ie=UTF8&psc=1">Digital Forensics with Open Source Tools</a></b></h4></td>
+    <td>Digital Forensics with Open Source Tools is the definitive book on investigating and analyzing computer systems and media using open source tools. The book is a technical procedural guide, and explains the use of open source tools on Mac, Linux and Windows systems as a platform for performing computer forensics.</td>
   </tr>
         <tr> 
-      <td><h4><b><a href=""></a></b></h4></td>
-    <td>
-      </td>
-  </tr>
-        <tr> 
-      <td><h4><b><a href=""></a></b></h4></td>
-    <td>
-      </td>
-  </tr>
-        <tr> 
-      <td><h4><b><a href=""></a></b></h4></td>
-    <td>
-      </td>
-  </tr>
-  
-  
-  
-  
-  
-  
-  
-  
-  <tr> 
-    <td><h4><b>Build Amazing Things (Securely)</b></h4>
-.
-    </td>
-    <td><h4><b>Laura Bell - </b></h4>
-.
-      </td>
-  </tr>
-    <tr> 
-    <td><h4><b>Build Amazing Things (Securely)</b></h4>
-.
-    </td>
-    <td><h4><b>Laura Bell - </b></h4>
-.
-      </td>
-  </tr>
-    <tr> 
-    <td><h4><b>Build Amazing Things (Securely)</b></h4>
-.
-    </td>
-    <td><h4><b>Laura Bell - </b></h4>
-.
-      </td>
-  </tr>
-    <tr> 
-    <td><h4><b>Build Amazing Things (Securely)</b></h4>
-.
-    </td>
-    <td><h4><b>Laura Bell - </b></h4>
-.
-      </td>
-  </tr>
-    <tr> 
-    <td><h4><b>Build Amazing Things (Securely)</b></h4>
-.
-    </td>
-    <td><h4><b>Laura Bell - </b></h4>
-.
-      </td>
-  </tr>
-    <tr> 
-    <td><h4><b>Build Amazing Things (Securely)</b></h4>
-.
-    </td>
-    <td><h4><b>Laura Bell - </b></h4>
-.
-      </td>
-  </tr>
-    <tr> 
-    <td><h4><b>Build Amazing Things (Securely)</b></h4>
-.
-    </td>
-    <td><h4><b>Laura Bell - </b></h4>
-.
-      </td>
-  </tr>
-    <tr> 
-    <td><h4><b>Build Amazing Things (Securely)</b></h4>
-.
-    </td>
-    <td><h4><b>Laura Bell - </b></h4>
-.
-      </td>
-  </tr>
-    <tr> 
-    <td><h4><b>Build Amazing Things (Securely)</b></h4>
-.
-    </td>
-    <td><h4><b>Laura Bell - </b></h4>
-.
-      </td>
-  </tr>
-    <tr> 
-    <td><h4><b>Build Amazing Things (Securely)</b></h4>
-.
-    </td>
-    <td><h4><b>Laura Bell - </b></h4>
-.
-      </td>
-  </tr>
-    <tr> 
-    <td><h4><b>Build Amazing Things (Securely)</b></h4>
-.
-    </td>
-    <td><h4><b>Laura Bell - </b></h4>
-.
-      </td>
-  </tr>
-    <tr> 
-    <td><h4><b>Build Amazing Things (Securely)</b></h4>
-.
-    </td>
-    <td><h4><b>Laura Bell - </b></h4>
-.
-      </td>
-  </tr>
+      <td><h4><b><a href="https://www.amazon.com.au/gp/product/B016N80EZ8/ref=dbs_a_def_rwt_hsch_vapi_taft_p1_i0">File System Forensic Analysis</a></b></h4></td>
+    <td>Most digital evidence is stored within the computer's file system, but understanding how file systems work is one of the most technically challenging concepts for a digital investigator because there exists little documentation. Now, security expert Brian Carrier has written the definitive reference for everyone who wants to understand and be able to testify about how file system analysis is performed.</td>
 
-      
-</tbody></table>
+   <h3> Other Books </h3>
+<table><tbody>  
+   <tr> 
+      <td><h4><b><a href=""></a></b></h4></td>
+    <td></td>
+  </tr>
+     <tr> 
+      <td><h4><b><a href=""></a></b></h4></td>
+    <td></td>
+  </tr>
+  </table>
+  
+     <h3> XX </h3>
+<table><tbody>  
+   <tr> 
+      <td><h4><b><a href=""></a></b></h4></td>
+    <td></td>
+  </tr>
+     <tr> 
+      <td><h4><b><a href=""></a></b></h4></td>
+    <td></td>
+  </tr>
+  </table>
+  
+  
+  
 
 
   </div>
