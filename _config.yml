@@ -6,3 +6,5 @@ highlighter: rouge
 markdown: redcarpet
 plugins:
   - jekyll-feed
+github_username: shannaniggans
+twitter_username: fancy_4n6

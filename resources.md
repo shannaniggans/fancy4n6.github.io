@@ -42,8 +42,7 @@ title: "DFIR Reading & Training Resources"
 <table><tbody>
       <tr> 
       <td><h4><b><a href="https://www.verizon.com/business/en-au/resources/reports/dbir/)">Verizon DBIR</a></b></h4></td>
-    <td>
-      </td>
+    <td>Verizon's Data Breach Investigations Report (DBIR) provides an annual analysis of security incidents and data breaches. The information and analysis are categorized by sector. Public sector organizations are key contributors to the report each year.</td>
   </tr>
       <tr> 
       <td><h4><b><a href="https://www.mandiant.com/sites/default/files/2021-09/mandiant-apt1-report.pdf">Mandiant APT1 Report</a></b></h4></td>
@@ -105,9 +104,9 @@ I’m hoping these curated lists of training and events will help others who are
     <td>This workshop provides the fundamentals of reversing engineering (RE) Windows malware using a hands-on experience with RE tools and techniques. You will be introduced to RE terms and processes, followed by creating a basic x86 assembly program, and reviewing RE tools and malware techniques. The course will conclude by participants performing hands-on malware analysis that consists of Triage, Static, and Dynamic analysis.</td>
   </tr>
   
-         <tr> 
+  <tr> 
       <td><h4><b><a href="https://www.splunk.com/en_us/training/free-courses/splunk-fundamentals-1.html">Splunk Fundamentals 1</a></b></h4></td>
-    <td></td>
+    <td>This course teaches you how to search and navigate in Splunk, use fields, get statistics from your data, create reports, dashboards, lookups, and alerts. Scenario-based examples and hands-on challenges will enable you to create robust searches, reports, and charts. It will also introduce you to Splunk's datasets features and Pivot interface.</td>
   </tr>
   
          <tr> 
