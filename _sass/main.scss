@@ -12,7 +12,6 @@ body {
 
 p, li {
   color:#DDF0FF;
-  text-align: justify;
 }
 
 td {
@@ -29,6 +28,14 @@ h1, h2, h3, h4, h5, h6 {
     "Lucida Console",
     Terminal,
     monospace;
+}
+
+h2 {
+  color:#de5499;
+}
+
+h3 {
+  color: #e99f4c;
 }
 
 pre code {
@@ -68,6 +75,7 @@ pre code {
     text-align: left;
   }
 
+/* The green dotted line around the pages*/
 .line {
   margin: 2px 0;
   height: 20px;
@@ -77,6 +85,7 @@ pre code {
   background-repeat: no-repeat;
 }
 
+/*table formatting for dfir-resources page*/
 .links {
       th,
       td,
