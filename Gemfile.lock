@@ -243,6 +243,7 @@ GEM
     rb-fsevent (0.11.1)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    redcarpet (3.5.1)
     rexml (3.2.5)
     rouge (3.26.0)
     ruby2_keywords (0.0.5)
@@ -278,6 +279,8 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (~> 226)
+  jekyll-feed
+  redcarpet
   wdm (>= 0.1.0)
   webrick (~> 1.7)
 
