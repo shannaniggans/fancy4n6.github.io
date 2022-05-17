@@ -1,9 +1,9 @@
 ---
 layout: posts
 categories: CTF
-title: ACSC BSides IR Challenge 2021 - Part 1
-date: '2022-05-03 08:58 +1000'
-last_modified: '2022-05-03 08:58 +1000'
+title: ACSC BSides IR Challenge 2021 - Setup
+date: '2022-05-03 +1000'
+last_modified: '2022-05-03 +1000'
 ---
 I was lucky enough to get to BSides Canberra in 2021, but I did not have time on the day(s) to compete on the IR challenge. But the team at the ACSC have provided the challenge in its entirety and I have been working my way through the challenges and will write up each of the different sections on how I solved the challenge and what tools I used. 
 
