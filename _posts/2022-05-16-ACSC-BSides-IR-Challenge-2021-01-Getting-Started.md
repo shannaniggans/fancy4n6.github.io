@@ -3,11 +3,17 @@ layout: posts
 categories: CTF
 title: ACSC BSides IR Challenge 2021 - 01 - Getting Started
 date: '2022-05-16 +1000'
-last_modified: '2022-05-16 +1000'
+last_modified: '2022-05-18 +1000'
 ---
-The Australian Logic and Interstellar Exploration Network (ALIEN) needs your help! An unknown cyber actor has blackmailed ALIEN claiming that they will release their research unless they are paid a hefty sum. ALIEN believe that the information must have been stolen through a cyber intrusion, and have enlisted your help to work alongside the ACSC to investigate what has happened.
+This part of the CTF is just about looking at the artefacts and data received, counting out the number of hosts and creating a checksum of a memory image. For this section I will use the following tools:
+* FTK Imager
+* PowerShell
+* Volatility
 
 ## 1 - Getting Started
+
+The Australian Logic and Interstellar Exploration Network (ALIEN) needs your help! An unknown cyber actor has blackmailed ALIEN claiming that they will release their research unless they are paid a hefty sum. ALIEN believe that the information must have been stolen through a cyber intrusion, and have enlisted your help to work alongside the ACSC to investigate what has happened.
+
 ### GS-0
 * Press submit on this one to continue.
 
@@ -27,7 +33,15 @@ The Australian Logic and Interstellar Exploration Network (ALIEN) needs your hel
   ```Get-FileHash memory.raw -Algorithm MD5 | Format-List```
 
 #### GS-2-2 FTK Imager
-* 
+We cant always use PowerShell to get an image if there is compression or added metadata (such as an E01 or an AFF file).
+
+1. In FTK Imager, add `memory.raw` as an evidence item.
+   ![FTK select source]({{site.baseurl}}/assets/imgs/FTK-select-source.png)
+2. Click next and browse to where you have memory.raw decompressed. You'll then have the memory image in the evidence tree section of FTK Imager.
+3. Right click on memory.raw and select "verify Drive/Image"
+   ![FTK verify image]({{site.baseurl}}/assets/imgs/FTK-verify-drive.png)
+4. Allow the verification process to complete, the results will be displayed on screen.   
+   ![FTK verify image]({{site.baseurl}}/assets/imgs/image-verification-results.png)
 
 <div class="flag">Flag: 20b25f76cc1839c2e7759a69a82bf664</div>
 

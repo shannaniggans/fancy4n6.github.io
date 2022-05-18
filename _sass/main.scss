@@ -167,8 +167,11 @@ a:active {
 
 /** Images */
 img {
-  max-width: 100%;
+  min-width: 150px;
   vertical-align: middle;
+  margin: 15px;
+  border: 1px solid #33ff00;
+  caption-side: bottom;
 }
 
 /** Figures */
@@ -177,6 +180,8 @@ figure>img {
 }
 
 figcaption {
+  display: table-caption;
+  caption-side: bottom;
   font-size: 14px;
 }
 
