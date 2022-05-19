@@ -5,10 +5,20 @@ title: "DFIR Reading & Training Resources"
 ---
 
 <h1>{{page.title}}</h1>
-<h5>Last Updated: 19 May 2022</h5>
+<h5>Last Updated: 20 May 2022</h5>
+
+I am quite often asked if there are sites, training, and/or books that I would recommend to get into DFIR and of course, continue to learn. So I have created a sub-page Resources with my recommendations. I will continue to update this page over time.
+
+## Table of Contents
+1. [Podcasts](#Podcasts)
+2. [Communities](#Communities)
+3. [Books & Reading Materials](#Books)
+4. [Free Online Training](#FreeOnlineTraining)
+5. [Capture The Flag Competitions (Archives)](#CTFArchive)
+
 <div class="links">
   <table><tbody>
-  <tr><td colspan="2"><h2>Podcasts</h2></td></tr>
+  <tr><td colspan="2"><h2>Podcasts<a name ="Podcasts"></a></h2></td></tr>
     <tr> 
       <td><h4><b><a href="https://thisweekin4n6.com/podcast/">This Week in 4n6</a></b></h4></td>
       <td>This Week in 4n6 is a collection of everything that happens on a weekly basis in the Digital Forensics and Incident Response community.</td>
@@ -24,19 +34,18 @@ title: "DFIR Reading & Training Resources"
         </td>
     </tr>
 
-    <tr><td colspan="2"><h2>Communities</h2></td></tr>
+  <tr><td colspan="2"><h2>Communities<a name ="Communities"></a></h2></td></tr>
+  <tr> 
+      <td><h4><b><a href="https://discord.com/invite/crH7RQeJZz">ComfyCon Discord</a></b></h4></td>
+      <td>ComfyCon AU was originally constructed as a conference in March 2020 as a response to the cancellation of Cyber Security conferences due to the COVID-19 pandemic.</td>
+  </tr>
+  <tr> 
+        <td><h4><b><a href="https://discord.gg/digitalforensics">Digital Forensics Discord</a></b></h4></td>
+      <td>A Discord server ran by and for the DFIR Community!
+        </td>
+  </tr>
 
-    <tr> 
-        <td><h4><b><a href="https://discord.com/invite/crH7RQeJZz">ComfyCon Discord</a></b></h4></td>
-        <td>ComfyCon AU was originally constructed as a conference in March 2020 as a response to the cancellation of Cyber Security conferences due to the COVID-19 pandemic.</td>
-    </tr>
-    <tr> 
-          <td><h4><b><a href="https://discord.gg/digitalforensics">Digital Forensics Discord</a></b></h4></td>
-        <td>A Discord server ran by and for the DFIR Community!
-          </td>
-    </tr>
-
-  <tr><td colspan="2"><h2>Books & Reading Materials</h2></td></tr>
+  <tr><td colspan="2"><h2>Books & Reading Materials<a name ="Books"></a></h2></td></tr>
   <tr><td colspan="2"><h3>Industry Reports</h3></td></tr>
     <tr> 
         <td><h4><b><a href="https://www.verizon.com/business/en-au/resources/reports/dbir/)">Verizon DBIR</a></b></h4></td>
@@ -60,16 +69,16 @@ title: "DFIR Reading & Training Resources"
 
   <tr><td colspan="2"><h3>Other Books</h3></td></tr>
 
+  <tr> 
+      <td><h4><b><a href="https://read.amazon.com.au/kp/embed?asin=B082DLMC6L&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_GJXQM5K5JS1ZMTW9FXA1">The Hacker and The State</a></b></h4></td>
+    <td>Packed with insider information based on interviews, declassified files, and forensic analysis of company reports, The Hacker and the State sets aside fantasies of cyber-annihilation to explore the real geopolitical competition of the digital age. Tracing the conflict of wills and interests among modern nations, Ben Buchanan reveals little-known details of how China, Russia, North Korea, Britain, and the United States hack one another in a relentless struggle for dominance. His analysis moves deftly from underseas cable taps to underground nuclear sabotage, from blackouts and data breaches to billion-dollar heists and election interference.</td>
+  </tr>
     <tr> 
-        <td><h4><b><a href="https://read.amazon.com.au/kp/embed?asin=B082DLMC6L&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_GJXQM5K5JS1ZMTW9FXA1">The Hacker and The State</a></b></h4></td>
-      <td>Packed with insider information based on interviews, declassified files, and forensic analysis of company reports, The Hacker and the State sets aside fantasies of cyber-annihilation to explore the real geopolitical competition of the digital age. Tracing the conflict of wills and interests among modern nations, Ben Buchanan reveals little-known details of how China, Russia, North Korea, Britain, and the United States hack one another in a relentless struggle for dominance. His analysis moves deftly from underseas cable taps to underground nuclear sabotage, from blackouts and data breaches to billion-dollar heists and election interference.</td>
-    </tr>
-      <tr> 
-        <td><h4><b><a href="https://www.cia.gov/resources/csi/books-monographs/psychology-of-intelligence-analysis-2/">Psychology of Intelligence Analysis</a></b></h4></td>
-      <td>The Psychology of Intelligence Analysis has been required reading for intelligence officers studying the art and science of intelligence analysis for decades. Richards Heuer, Jr. discusses in the book how fundamental limitations in human mental processes can prompt people to jump to conclusions and employ other simplifying strategies that lead to predictably faulty judgments known as cognitive biases. These analytic mindsets cannot be avoided, but they can be overcome through the application of more structured and rigorous analytic techniques including the Analysis of Competing Hypotheses.</td>
-    </tr>
+      <td><h4><b><a href="https://www.cia.gov/resources/csi/books-monographs/psychology-of-intelligence-analysis-2/">Psychology of Intelligence Analysis</a></b></h4></td>
+    <td>The Psychology of Intelligence Analysis has been required reading for intelligence officers studying the art and science of intelligence analysis for decades. Richards Heuer, Jr. discusses in the book how fundamental limitations in human mental processes can prompt people to jump to conclusions and employ other simplifying strategies that lead to predictably faulty judgments known as cognitive biases. These analytic mindsets cannot be avoided, but they can be overcome through the application of more structured and rigorous analytic techniques including the Analysis of Competing Hypotheses.</td>
+  </tr>
 
-  <tr><td colspan="2"><h2>Free Online Training</h2></td></tr>
+  <tr><td colspan="2"><h2>Free Online Training<a name ="FreeOnlineTraining"></a></h2></td></tr>
 
   <tr>
     <td><h4><b><a href="https://itmasters.edu.au/free-short-course-digital-forensics-updated/">Free Short Course: Digital Forensics</a></b></h4></td>
@@ -138,9 +147,24 @@ title: "DFIR Reading & Training Resources"
         <td><h4><b><a href="ttps://techcommunity.microsoft.com/t5/azure-sentinel/become-an-azure-sentinel-ninja-the-complete-level-400-training/ba-p/1246310">Become a Microsoft Sentinel Ninja: The complete level 400 training</a></b></h4></td>
       <td>This training program includes 16 modules. The post includes a presentation for each module, and supporting information: relevant product documentation, blog posts, and other resources.</td>
     </tr>
-    <tr> 
-        <td><h4><b><a href=""></a></b></h4></td>
-      <td></td>
-    </tr>
-    </tbody></table>
-  </div>
+  
+  <tr><td colspan="2"><h2>Capture The Flag Competitions (Archives)<a name ="CTFArchive"></a></h2></td></tr>
+  <tr> 
+    <td><h4><b><a href="https://www.cyber.gov.au/acsc/view-all-content/news/acsc-cyber-security-challenge">ACSC cyber security challenge</a></b></h4></td>
+    <td>The ACSC has released a simulated cyber incident challenge so anyone can test or improve their cyber response ability and forensic skills. Organisations may wish to use the challenge as a group training exercise for cyber security staff. The challenge was originally run at the BSides Canberra conference in April 2021.</td>
+  </tr>
+  <tr> 
+    <td><h4><b><a href="https://ctf.metaspike.com/">Metaspike Email Forensics CTF Competition</a></b></h4></td>
+    <td>Email forensics CTF challenges from 2021-2022 available with solutions. Sign up to be notified when the next CTF challenge is run.</td>
+  </tr>
+
+  <tr> 
+    <td><h4><b><a href="https://www.hecfblog.com/2019/04/daily-blog-657-mus2019-dfir-ctf-open-to.html">MUS2019 DFIR CTF</a></b></h4></td>
+    <td>The DFIR CTF that we ran at the magnet user summit is now open to the public.</td>
+  </tr>  
+  <tr> 
+    <td><h4><b><a href="https://aboutdfir.com/education/challenges-ctfs/">About DFIR Challenge Links</a></b></h4></td>
+    <td>This site has a much larger and more comprehensive list of DFIR CTF challenges and archives.</td>
+  </tr>  
+</tbody></table>
+</div>
