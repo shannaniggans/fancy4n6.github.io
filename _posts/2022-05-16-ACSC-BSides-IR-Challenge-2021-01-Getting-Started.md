@@ -3,7 +3,7 @@ layout: posts
 categories: CTF
 title: ACSC BSides IR Challenge 2021 - 01 - Getting Started
 date: '2022-05-16 +1000'
-last_modified: '2022-05-18 +1000'
+last_modified: '2022-05-19 +1000'
 ---
 This part of the CTF is just about looking at the artefacts and data received, counting out the number of hosts and creating a checksum of a memory image. For this section I will use the following tools:
 * FTK Imager
@@ -73,8 +73,11 @@ PE Machine      34404
 PE TimeDateStamp        Mon Nov 22 08:46:06 2010
 ```
 
-#### GS-3-2 TrufflePig Forensics
- * Couldn't see where I could find this information in TPF
+#### GS-3-2 TrufflePig Nexus
+1. Create a project in Nexus and import the memory.raw image.
+2. From the menu on the left choose "metaInfo"
+3. Scroll down to "SystemTime"
+  ![MetaInfo in Nexus]({{site.baseurl}}/assets/imgs/GS-3-2-nexus.png)
 
 <div class="flag">Flag: 2021-04-06 01:56:57</div>
 
