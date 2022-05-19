@@ -5,6 +5,7 @@ title: "DFIR Reading & Training Resources"
 ---
 
 <h1>{{page.title}}</h1>
+<h5>Last Updated: 19 May 2022</h5>
 <div class="links">
   <table><tbody>
   <tr><td colspan="2"><h2>Podcasts</h2></td></tr>
@@ -69,6 +70,24 @@ title: "DFIR Reading & Training Resources"
     </tr>
 
   <tr><td colspan="2"><h2>Free Online Training</h2></td></tr>
+
+  <tr>
+    <td><h4><b><a href="https://itmasters.edu.au/free-short-course-digital-forensics-updated/">Free Short Course: Digital Forensics</a></b></h4></td>
+    <td>Cyber criminals saw their opportunity and made the most of it in 2020. With such a drastic shift to online everything for everyone, we saw cyber criminals make some pretty daring moves. Due to these increasingly sophisticated cyber-attacks, forensic investigations are becoming more and more common.<br>
+    An update of our extremely popular short course from 2015, this short course offers an introduction to our full Digital Forensics subject.
+    <ul><li>High-level view of the emerging and evolving digital forensics field</li>
+    <li>Investigating, detecting and preventing digital crimes </li>
+    <li>Formulating a digital forensics process</li>
+    <li>Collecting electronic evidence</li>
+    <li>Social media, mobile device and cloud forensics</li>
+    </ul></td>
+  </tr>
+
+  <tr>
+    <td><h4><b><a href="https://itmasters.edu.au/free-short-course-cyber-warfare-and-terrorism/">Free Short Course: Cyber Warfare and Terrorism</a></b></h4></td>
+    <td>When Einstein famously said “I know not with what weapons World War III will be fought, but World War IV will be fought with sticks and stones.”  he could only imagine the horrors of future weapons. He had no way to foresee the advent of cyberwar. Whatever form any future war takes it is now apparent that cyber warfare will be part of it.<br>
+    This four week short course introduces you to the rise of state sponsored cyber attack, a concept that only a few years ago seemed within the realm of science fiction.  You will be introduced to the major classes of cyber weapons: trojans, worms, and distributed denial of service, as well as sophisticated hacking. You will also learn the history of nation state involvement in cyber attack as well as the looming threat of cyber attack from terrorist organisations.</td>
+  </tr>
 
     <tr> 
         <td><h4><b><a href="https://training.dfirdiva.com/training-listings">DFIR Diva Free IR Training</a></b></h4></td>
