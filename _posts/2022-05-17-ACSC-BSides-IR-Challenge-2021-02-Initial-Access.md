@@ -1,6 +1,7 @@
 ---
 layout: posts
 categories: CTF
+tags: ACSC
 title: ACSC BSides IR Challenge 2021 - 02 - Initial Access
 date: '2022-05-19 +1000'
 last_modified: '2022-05-19 +1000'
@@ -8,6 +9,8 @@ last_modified: '2022-05-19 +1000'
 There are 5 questions in this section that are primarily focused on external facing systems and their log files. There are a few options to review the logs provided as part of the zip file, but I opted to set up Splunk and do the challenge using Splunk.
 
 Log parser is another great option to parse IIS logs.
+
+> <a href="https://attack.mitre.org/tactics/TA0001/">TA001</a> - **Initial Access** consists of techniques that use various entry vectors to gain their initial foothold within a network. Techniques used to gain a foothold include targeted spearphishing and exploiting weaknesses on public-facing web servers. Footholds gained through initial access may allow for continued access, like valid accounts and use of external remote services, or may be limited-use due to changing passwords.
 
 ## 2 - Initial Access
 
@@ -80,6 +83,9 @@ Their malicious 'wizardry' that failed (404 status)
 * Given we are looking for a file created I will parse the MFT and look for files created on the file system that corresponding to the timeline from the IIS log analysis:
   * around 2021-04-01 02:50 UTC
 * <a href="/ctf/2022/05/03/ACSC-BSides-IR-Challenge-2021-Setup.html">EZTools - MFTECmd.exe</a> will do the trick to parse the $MFT file provided in the artefacts folder (root of C drive). I'll run this from a PowerShell window.
+
+#### EvtxExplorer - MFTECmd
+
   ```
   C:\Users\fancy_4n6\Desktop\EZTools\MFTECmd.exe --csv "c:\temp\out" --csvf dmz-webpub-mft-c.csv
   ```

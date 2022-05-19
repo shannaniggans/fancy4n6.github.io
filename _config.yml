@@ -1,10 +1,24 @@
 url: "www.fancy4n6.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "./Fancy Forensics" # the name of your site, e.g. ACME Corp.
+title: "Fancy Forensics" # the name of your site, e.g. ACME Corp.
 description: "Digital forensics & incident response research and writeups"
 highlighter: rouge
 markdown: redcarpet
 plugins:
   - jekyll-feed
+  - jekyll-archives
+
+# Social media links
 github_username: shannaniggans
 twitter_username: fancy_4n6
+
+jekyll-archives:
+  enabled:
+    - tags
+  layout: archive
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'

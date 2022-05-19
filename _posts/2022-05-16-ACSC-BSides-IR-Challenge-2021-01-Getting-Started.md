@@ -1,6 +1,7 @@
 ---
 layout: posts
 categories: CTF
+tags: ACSC
 title: ACSC BSides IR Challenge 2021 - 01 - Getting Started
 date: '2022-05-16 +1000'
 last_modified: '2022-05-19 +1000'
@@ -9,6 +10,7 @@ This part of the CTF is just about looking at the artefacts and data received, c
 * FTK Imager
 * PowerShell
 * Volatility
+* TrufflePig Nexus
 
 ## 1 - Getting Started
 

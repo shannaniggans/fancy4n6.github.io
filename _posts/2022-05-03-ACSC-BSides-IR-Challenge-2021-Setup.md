@@ -1,6 +1,7 @@
 ---
 layout: posts
 categories: CTF
+tags: ACSC
 title: ACSC BSides IR Challenge 2021 - Setup
 date: '2022-05-03 +1000'
 last_modified: '2022-05-03 +1000'
