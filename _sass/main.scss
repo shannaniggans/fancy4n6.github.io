@@ -1,16 +1,19 @@
 $backgroundColor: #000000;
 $bodyColor: #00ffff;
 
+
+
 body {
   background: $backgroundColor;
   color: $bodyColor;
   @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-  font-family: 'Roboto',
+  font-family: 'Arial',
   sans-serif;
 }
 
 p, li {
   color:#DDF0FF;
+      font-size: 1em;
 }
 
 td {
@@ -22,27 +25,31 @@ tr {
 
 h1, h2, h3, h4, h5, h6 {
 
-  font-family: Monaco,
-    "Bitstream Vera Sans Mono",
-    "Lucida Console",
-    Terminal,
-    monospace;
+  font-family: 'Roboto';
+}
+
+h1 {
+  font-size: 1.5em;
 }
 
 h2 {
   color:#de5499;
+    font-size: 1.4em;
 }
 
 h3 {
   color: #e99f4c;
+      font-size: 1.3em;
 }
 
 h4 {
   color: #eddcd9;
+      font-size: 1.2em;
 }
 
 h5 {
   color: #f2ebe9;
+      font-size: 1.1em;
 }
 
 .ctfq {
@@ -60,16 +67,16 @@ pre code {
   display: block;
   padding: 10px;
   white-space: normal;
+  max-width: 100%;
   }
 
 .header img {
-  display: block;
-  max-width: 15px;
   border: none;
-  float: left;
   margin: 15px;
-  padding-right: 15px;
+  vertical-align: top;
 }
+
+
 
 /* the div class="container" is to set that size of the main part of the site 
   It's set in the header, body and footer*/
@@ -84,6 +91,8 @@ pre code {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    max-width: 100%;
+    height: auto;
 }
 .container
   th,
@@ -97,16 +106,6 @@ pre code {
     padding-bottom: 5px;
     text-align: left;
   }
-
-/* The green dotted line around the pages*/
-.line {
-  margin: 2px 0;
-  height: 20px;
-  background:
-    repeating-linear-gradient(to right, #33ff00 0, #33ff00 10px, transparent 10px, transparent 12px) bottom;
-  background-size: 100% 2px;
-  background-repeat: no-repeat;
-}
 
 /*table formatting for dfir-resources page*/
 .links {
@@ -138,12 +137,12 @@ blockquote p {
 
 /* Header specific css */
 .header a {
-  background-color: #DDF0FF;
-  color: #223127;
+  color: #DDF0FF;
   padding: 10px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  text-transform: uppercase;
 }
 
 .header a:hover {
@@ -156,11 +155,6 @@ blockquote p {
   text-decoration: none;
 }
 
-
-
-.header nav {
-  margin-bottom: 20px;
-}
 
 /* Font and links for the whole site */
 a {
@@ -200,6 +194,7 @@ figcaption {
 /** Site footer */
 .site-footer {
   padding: 10px 0;
+  max-width:100%;
 }
 
 .footer-col-wrapper {
@@ -236,3 +231,4 @@ figcaption {
   width: -webkit-calc(45% - (30px / 2));
   width: calc(45% - (30px / 2));
 }
+
