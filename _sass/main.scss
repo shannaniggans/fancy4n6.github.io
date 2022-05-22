@@ -62,7 +62,13 @@ pre code {
   white-space: normal;
   }
 
-
+.header img {
+  display: block;
+  max-width: 15px;
+  border: none;
+  float: left;
+  margin: 15px;
+}
 
 /* the div class="container" is to set that size of the main part of the site 
   It's set in the header, body and footer*/
@@ -77,7 +83,6 @@ pre code {
     display: block;
     margin-left: auto;
     margin-right: auto;
-
 }
 .container
   th,
@@ -150,13 +155,7 @@ blockquote p {
   text-decoration: none;
 }
 
-.header img {
-  display: block;
-  max-width: 15px;
-  border: none;
-  float: left;
-  margin: 15px;
-}
+
 
 .header nav {
   margin-bottom: 20px;
