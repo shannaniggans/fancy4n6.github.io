@@ -10,7 +10,7 @@ Once the attacker has access to an internet facing system they will look to move
 
 To complete this section I have used the following tools:
 * Splunk
-* Eric Zimmerman Tools
+* Eric Zimmerman Tools - MFTECmd.exe
 
 > <a href="https://attack.mitre.org/tactics/TA0008/">TA008</a> - **Lateral movement** consists of techniques that adversaries use to enter and control remote systems on a network. Following through on their primary objective often requires exploring the network to find their target and subsequently gaining access to it. Reaching their objective often involves pivoting through multiple systems and accounts to gain. Adversaries might install their own remote access tools to accomplish Lateral Movement or use legitimate credentials with native network and operating system tools, which may be stealthier.
 
@@ -91,7 +91,7 @@ When we answer LM-3, we get a miscellaneous question available.
   
   `4/1/21 3:03:16.000 AM 2021-04-01 03:03:16 10.1.1.110 GET /submit.aspx - 80 - 10.1.0.80 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:54.0)+Gecko/20100101+Firefox/54.0 - 200 0 0 1703 c_ip = 10.1.0.80host = corp-webdevsource = W3SVC2.zip:.\u_ex210401.logsourcetype = iis`
 
-#### EvtxExplorer - MFT Parser
+#### MFT Parser
 Similar to the previous system we analysed, we'll run MFTECmd.exe across the $MFT and pipe into a csv file to import into our tracking spreadsheet.
 ```powershell
 .\MFTECmd.exe -f "D:\Fancy4n6\Streams\ACSC_IR_Challenge_2021\artefacts\corp-webdev.alien.local\C\`$MFT" --csv "D:\Fancy4n6\Streams\ACSC_IR_Challenge_2021\artefacts\corp-webdev.alien.local\C\" --csvf corp-webdev-mft-output.csv
