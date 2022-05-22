@@ -150,6 +150,18 @@ blockquote p {
   text-decoration: none;
 }
 
+.header img {
+  display: block;
+  max-width: 15%;
+  border: none;
+  float: left;
+  margin: 15px;
+}
+
+.header nav {
+  margin-bottom: 20px;
+}
+
 /* Font and links for the whole site */
 a {
   color:#59C9A5;
