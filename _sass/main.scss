@@ -143,6 +143,7 @@ blockquote p {
   text-decoration: none;
   display: inline-block;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .header a:hover {
@@ -155,6 +156,11 @@ blockquote p {
   text-decoration: none;
 }
 
+.divider-line {
+  width: 100%;
+  border-bottom: 3px solid black;
+  position: relative;
+}
 
 /* Font and links for the whole site */
 a {
