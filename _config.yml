@@ -7,6 +7,7 @@ markdown: redcarpet
 plugins:
   - jekyll-feed
   - jekyll-archives
+  - jekyll-sitemap
 
 # Social media links
 github_username: shannaniggans
