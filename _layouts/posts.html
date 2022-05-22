@@ -9,6 +9,7 @@ layout: default
 <!-- for now this just takes the date and last_updated from the post manually-->
 {%- assign date_format = site.minima.date_format | default: '%b %-d, %Y' -%}
 <p>Published: {{ page.date | date: date_format }} <br> Last Updated: {{ page.last_modified | date: date_format }}</p>
+<p>{% include reading-time.html %}</p>
 <p>---------------------------------------------------------</p>
 
 <body>
