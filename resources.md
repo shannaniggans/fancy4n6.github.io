@@ -147,6 +147,11 @@ I am quite often asked if there are sites, training, and/or books that I would r
         <td><h4><b><a href="ttps://techcommunity.microsoft.com/t5/azure-sentinel/become-an-azure-sentinel-ninja-the-complete-level-400-training/ba-p/1246310">Become a Microsoft Sentinel Ninja: The complete level 400 training</a></b></h4></td>
       <td>This training program includes 16 modules. The post includes a presentation for each module, and supporting information: relevant product documentation, blog posts, and other resources.</td>
     </tr>
+  <tr> 
+    <td><h4><b><a href="https://www.jaiminton.com/cheatsheet/DFIR/">DFIR Cheatsheet</a></b></h4></td>
+    <td>Curated by Jai Minton, this page contains a variety of commands and concepts which are known through experience, higher education, tutorials, online blogs, YouTube Videos, professional training, reading the manual, and more. All references to original posts or material will aim to be documented in the ‘Special Thanks’ section.
+    </td>
+  </tr> 
   
   <tr><td colspan="2"><h2>Capture The Flag Competitions (Archives)<a name ="CTFArchive"></a></h2></td></tr>
   <tr> 
@@ -166,10 +171,6 @@ I am quite often asked if there are sites, training, and/or books that I would r
     <td><h4><b><a href="https://aboutdfir.com/education/challenges-ctfs/">About DFIR Challenge Links</a></b></h4></td>
     <td>This site has a much larger and more comprehensive list of DFIR CTF challenges and archives.</td>
   </tr>
-  <tr> 
-    <td><h4><b><a href="https://www.jaiminton.com/cheatsheet/DFIR/">DFIR Cheatsheet</a></b></h4></td>
-    <td>Curated by Jai Minton, this page contains a variety of commands and concepts which are known through experience, higher education, tutorials, online blogs, YouTube Videos, professional training, reading the manual, and more. All references to original posts or material will aim to be documented in the ‘Special Thanks’ section.
-    </td>
-  </tr>  
+ 
 </tbody></table>
 </div>
