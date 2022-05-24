@@ -11,6 +11,13 @@ layout: default
 <p>Published: {{ page.date | date: date_format }} <br> Last Updated: {{ page.last_modified | date: date_format }}</p>
 <p>{% include reading-time.html %}</p>
 <p>{% include share-page.html %}</p>
+<!-- Display the tags for the post -->
+<span>[
+        {% for tag in page.tags %}
+        {% capture tag_name %}{{ tag }}{% endcapture %}
+        <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
+        {% endfor %}
+        ]</span>
 <p>---------------------------------------------------------</p>
 
 <body>
@@ -19,20 +26,7 @@ layout: default
        {% include share-page.html %}
 </body>
 
-
-<!-- -->-->
-
-{% if page.tags != empty %}
-<footer>
-        <p>Read more:</p>
-        <ul class="tag-list">
-                {% for tag in page.tags %}
-                <li><a href="{{ site.baseurl }} /tag/{{ tag | slugify }}">{{ tag }}</a></li>
-                {% endfor %}
-        </ul>
-</footer>
-{% endif %}
-
+<!-- This is the script to add comments with utterances-->
 <script src="https://utteranc.es/client.js" repo="shannaniggans/fancy4n6.github.io" issue-term="title" theme="photon-dark"
         crossorigin="anonymous" async>
 </script> 

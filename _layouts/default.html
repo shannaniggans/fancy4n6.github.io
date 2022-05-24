@@ -8,6 +8,11 @@
     
     <!-- Google analytics information in _includes/analytics.html -->
     {% include analytics.html %}
+
+    <!-- Executing the collection of tags in collecttags.html-->
+    {% if site.tags != "" %}
+      {% include collecttags.html %}
+    {% endif %}
   </head>
 
   <header>
