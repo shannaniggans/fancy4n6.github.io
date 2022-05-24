@@ -238,3 +238,19 @@ figcaption {
   width: calc(45% - (30px / 2));
 }
 
+/* Styling for the share buttons (social media) on _inlcudes/share-page.html*/
+.share-page {
+  text-align: center;
+  padding: 8px 15px;
+  border-radius: 5px;
+
+  a {
+    font-weight: 700;
+    color: #fff;
+    margin-left: 10px;
+
+    &:hover {
+      border-bottom: 1px dashed #fff;
+    }
+  }
+}
