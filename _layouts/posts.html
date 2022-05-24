@@ -18,6 +18,21 @@ layout: default
 <p>---------------------------------------------------------</p>
        {% include share-page.html %}
 </body>
+
+
+<!-- -->-->
+
+{% if page.tags != empty %}
+<footer>
+        <p>Read more:</p>
+        <ul class="tag-list">
+                {% for tag in page.tags %}
+                <li><a href="{{ site.baseurl }} /tag/{{ tag | slugify }}">{{ tag }}</a></li>
+                {% endfor %}
+        </ul>
+</footer>
+{% endif %}
+
 <script src="https://utteranc.es/client.js" repo="shannaniggans/fancy4n6.github.io" issue-term="title" theme="photon-dark"
         crossorigin="anonymous" async>
 </script> 
