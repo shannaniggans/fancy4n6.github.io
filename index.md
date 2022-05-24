@@ -31,3 +31,4 @@ permalink: /
 </div>
 
 <!-- Add in the Tag cloud -->
+{% include tag-cloud.html %}
