@@ -165,6 +165,11 @@ I am quite often asked if there are sites, training, and/or books that I would r
   <tr> 
     <td><h4><b><a href="https://aboutdfir.com/education/challenges-ctfs/">About DFIR Challenge Links</a></b></h4></td>
     <td>This site has a much larger and more comprehensive list of DFIR CTF challenges and archives.</td>
+  </tr>
+  <tr> 
+    <td><h4><b><a href="https://www.jaiminton.com/cheatsheet/DFIR/">DFIR Cheatsheet</a></b></h4></td>
+    <td>Curated by Jai Minton, this page contains a variety of commands and concepts which are known through experience, higher education, tutorials, online blogs, YouTube Videos, professional training, reading the manual, and more. All references to original posts or material will aim to be documented in the ‘Special Thanks’ section.
+    </td>
   </tr>  
 </tbody></table>
 </div>
