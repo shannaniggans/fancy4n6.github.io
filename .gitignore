@@ -1,1 +1,4 @@
-_site
+_site\assets
+_site\ctf
+_site\ctf-writeups
+_site\intro-to-dfir
