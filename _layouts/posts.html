@@ -10,11 +10,15 @@ layout: default
 {%- assign date_format = site.minima.date_format | default: '%b %-d, %Y' -%}
 <p>Published: {{ page.date | date: date_format }} <br> Last Updated: {{ page.last_modified | date: date_format }}</p>
 <p>{% include reading-time.html %}</p>
+<p>{% include share-page.html %}</p>
 <p>---------------------------------------------------------</p>
 
 <body>
         {{ content }}
-        {% include share-page.html %}
+       
+       <br>
+       
+       {% include share-page.html %}
 </body>
 <script src="https://utteranc.es/client.js" repo="shannaniggans/fancy4n6.github.io" issue-term="title" theme="photon-dark"
         crossorigin="anonymous" async>
