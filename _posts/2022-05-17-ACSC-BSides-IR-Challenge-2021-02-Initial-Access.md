@@ -1,7 +1,7 @@
 ---
 layout: posts
 categories: CTF
-tags: ACSC
+tags: ACSC-IR-Challenge-2021
 title: ACSC BSides IR Challenge 2021 - 02 - Initial Access
 date: '2022-05-19 +1000'
 last_modified: '2022-05-19 +1000'
