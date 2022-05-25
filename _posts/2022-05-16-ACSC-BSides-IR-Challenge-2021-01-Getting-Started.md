@@ -1,10 +1,11 @@
 ---
-layout: posts
-categories: CTF
-tags: ACSC-IR-Challenge-2021
+layout: post
 title: ACSC BSides IR Challenge 2021 - 01 - Getting Started
-date: '2022-05-16 +1000'
-last_modified: '2022-05-19 +1000'
+author: shanna
+categories: CTF
+image: assets/images/CTF.png
+tags: ACSC-Challenge-2021
+toc: true
 ---
 This part of the CTF is just about looking at the artefacts and data received, counting out the number of hosts and creating a checksum of a memory image. For this section I will use the following tools:
 * FTK Imager
@@ -14,20 +15,20 @@ This part of the CTF is just about looking at the artefacts and data received, c
 
 ## 1 - Getting Started
 
-The Australian Logic and Interstellar Exploration Network (ALIEN) needs your help! An unknown cyber actor has blackmailed ALIEN claiming that they will release their research unless they are paid a hefty sum. ALIEN believe that the information must have been stolen through a cyber intrusion, and have enlisted your help to work alongside the ACSC to investigate what has happened.
+>The Australian Logic and Interstellar Exploration Network (ALIEN) needs your help! An unknown cyber actor has blackmailed ALIEN claiming that they will release their research unless they are paid a hefty sum. ALIEN believe that the information must have been stolen through a cyber intrusion, and have enlisted your help to work alongside the ACSC to investigate what has happened.
 
 ### GS-0
 * Press submit on this one to continue.
 
 ### GS-1
-<div class="ctfq">How many hosts have we received data from?</div>
+<h5>How many hosts have we received data from?</h5>
 
 * Easy one, just count the number of zip files provided as they named by host.
 
-<div class="flag">Flag: 9</div>
+<h5>Flag: 9</h5>
 
 ### GS-2
-<div class="ctfq">What is the MD5 hash of the memory image provided?</div>
+<h5>What is the MD5 hash of the memory image provided?</h5>
 
 #### GS-2-1 PowerShell
 * Because we are dealing with a RAW image file, we can use PowerShell to calculate the hash of the file itself.
@@ -38,17 +39,17 @@ The Australian Logic and Interstellar Exploration Network (ALIEN) needs your hel
 We cant always use PowerShell to get an image if there is compression or added metadata (such as an E01 or an AFF file).
 
 1. In FTK Imager, add `memory.raw` as an evidence item.
-   ![FTK select source]({{site.baseurl}}/assets/imgs/FTK-select-source.png)
+   ![FTK select source]({{site.baseurl}}/assets/images/posts/FTK-select-source.png)
 2. Click next and browse to where you have memory.raw decompressed. You'll then have the memory image in the evidence tree section of FTK Imager.
 3. Right click on memory.raw and select "verify Drive/Image"
-   ![FTK verify image]({{site.baseurl}}/assets/imgs/FTK-verify-drive.png)
+   ![FTK verify image]({{site.baseurl}}/assets/images/posts/FTK-verify-drive.png)
 4. Allow the verification process to complete, the results will be displayed on screen.   
-   ![FTK verify image]({{site.baseurl}}/assets/imgs/image-verification-results.png)
+   ![FTK verify image]({{site.baseurl}}/assets/images/posts/image-verification-results.png)
 
-<div class="flag">Flag: 20b25f76cc1839c2e7759a69a82bf664</div>
+<h5>Flag: 20b25f76cc1839c2e7759a69a82bf664</h5>
 
 ### GS-3
-<div class="ctfq">What time was this image taken?</div>
+<h5>What time was this image taken?</h5>
 
 I want to use a few different tools to get the answers and test out some new tools along the way, so I've started here.
 
@@ -79,15 +80,15 @@ PE TimeDateStamp        Mon Nov 22 08:46:06 2010
 1. Create a project in Nexus and import the memory.raw image.
 2. From the menu on the left choose "metaInfo"
 3. Scroll down to "SystemTime"
-  ![MetaInfo in Nexus]({{site.baseurl}}/assets/imgs/GS-3-2-nexus.png)
+  ![MetaInfo in Nexus]({{site.baseurl}}/assets/images/posts/GS-3-2-nexus.png)
 
-<div class="flag">Flag: 2021-04-06 01:56:57</div>
+<h5>Flag: 2021-04-06 01:56:57</h5>
 
 ### GS-4
-<div class="ctfq">What website management platform are ALIEN using for their public facing website?</div>
+<h5>What website management platform are ALIEN using for their public facing website?</h5>
 
 * Just looked at the web log files and googled the cs_uri_stem `/Install/InstallWizard.aspx __VIEWSTATE=&culture=en-US&executeinstall` to see what came back:
   * <a href="https://www.exploit-db.com/raw/39777">https://www.exploit-db.com/raw/39777</a><br>
   * <a href="https://msadiqm.blogspot.com/2017/11/dotnetnuke-070400-administration.html">https://msadiqm.blogspot.com/2017/11/dotnetnuke-070400-administration.html</a>
 
-<div class="flag">Flag: DotNetNuke</div>
+<h5>Flag: DotNetNuke</h5>

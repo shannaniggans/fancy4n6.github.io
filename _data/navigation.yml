@@ -1,8 +1,0 @@
-- name: Home
-  link: /
-- name: Tools
-  link: /tools
-- name: CTF Write-ups
-  link: /ctf-writeups/
-- name: Resources
-  link: /dfir-resources
