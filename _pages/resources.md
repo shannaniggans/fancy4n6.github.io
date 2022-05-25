@@ -30,6 +30,10 @@ I am quite often asked if there are sites, training, and/or books that I would r
       <td><h4><b><a href="https://darknetdiaries.com/">Darknet Diaries</a></b></h4></td>
       <td>True stories from the dark side of the Internet. This is a podcast about hackers, breaches, shadow government activity, hacktivism, cybercrime, and all the things that dwell on the hidden parts of the network.</td>
     </tr>
+    <tr> 
+      <td><h4><b><a href="https://anchor.fm/4n6reformatted">Forensics Reformatted Podcast</a></b></h4></td>
+      <td>Forensics Reformatted is a Digital Forensics podcast by former Chewing the FAT hosts, Adam Firman & Phil Cobley. The show is self-funded and aimed at supporting the DFIR community through insights, humour, and bringing together others from in and around the industry.</td>
+    </tr>
     <tr><td colspan="2"><h2>Communities<a name ="Communities"></a></h2></td></tr>
     <tr> 
       <td><h4><b><a href="https://discord.com/invite/crH7RQeJZz">ComfyCon Discord</a></b></h4></td>
