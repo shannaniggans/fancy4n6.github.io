@@ -20,7 +20,7 @@
 
 <!-- Executing the collection of tags in collecttags.html-->
 {% if site.tags != "" %}
-{% include collecttags.html %}
+    {% include collecttags.html %}
 {% endif %}
 
 </head>
@@ -76,10 +76,10 @@ ga('send', 'pageview');
                 <a class="nav-link" href="{{ site.baseurl }}/index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ site.baseurl }}/category/tools/index.html">Tools</a>
+                    <a class="nav-link" href="{{ site.baseurl }}/categories#Tools">Tools</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ site.baseurl }}/category/ctf/index.html">CTF Write-ups</a>
+                    <a class="nav-link" href="{{ site.baseurl }}/categories#CTF">CTF Write-ups</a>
                 </li>
                 <!-- commenting out this for now
                 <li class="nav-item">

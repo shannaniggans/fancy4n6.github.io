@@ -11,6 +11,9 @@ include: ["_pages"]
 permalink: /:title/
 url: "www.fancy4n6.com"
 
+# Tags
+tag_dir: tag
+
 # Authors
 authors:
   shanna:
