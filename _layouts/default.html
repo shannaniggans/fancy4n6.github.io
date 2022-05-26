@@ -19,13 +19,8 @@
 <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WV2F0X9QJ6"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
 
-    gtag('config', 'G-WV2F0X9QJ6');
-</script>
+{% include analytics.html %}
 
 <!-- Executing the collection of tags in collecttags.html-->
 {% if site.tags != "" %}
