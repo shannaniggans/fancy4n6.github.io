@@ -2,7 +2,6 @@
 title: "Fancy Forensics"
 description: "Digital forensics & incident response research and writeups."
 logo: 'assets/images/fancy4n6-header.png'
-favicon: 'assets/images/favicon.ico'
 baseurl: ""
 google_analytics: 'G-WV2F0X9QJ6'
 # disqus: 'demowebsite'
