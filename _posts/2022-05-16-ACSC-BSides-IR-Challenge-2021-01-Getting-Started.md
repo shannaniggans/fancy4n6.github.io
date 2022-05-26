@@ -7,15 +7,21 @@ image: assets/images/CTF.png
 tags: ACSC-Challenge-2021
 toc: true
 ---
+#### Post series
+In April 2021 the ACSC hosted an IR challenge at BSides Canberra. I am writing up a blog post for each of the different sections of the challenge including the tools set up. The complete listing of all the parts I've written up can be found <a target="_blank" href="{{ site.baseurl }}/tags#ACSC-Challenge-2021">here.</a>
+
+The challenge can be downloaded <a href="https://www.cyber.gov.au/acsc/view-all-content/news/acsc-cyber-security-challenge">here</a> along with all the details you need to get going. 
+<p>-----</p>
+
+## 1 - Getting Started
+
+>The Australian Logic and Interstellar Exploration Network (ALIEN) needs your help! An unknown cyber actor has blackmailed ALIEN claiming that they will release their research unless they are paid a hefty sum. ALIEN believe that the information must have been stolen through a cyber intrusion, and have enlisted your help to work alongside the ACSC to investigate what has happened.
+
 This part of the CTF is just about looking at the artefacts and data received, counting out the number of hosts and creating a checksum of a memory image. For this section I will use the following tools:
 * FTK Imager
 * PowerShell
 * Volatility
 * TrufflePig Nexus
-
-## 1 - Getting Started
-
->The Australian Logic and Interstellar Exploration Network (ALIEN) needs your help! An unknown cyber actor has blackmailed ALIEN claiming that they will release their research unless they are paid a hefty sum. ALIEN believe that the information must have been stolen through a cyber intrusion, and have enlisted your help to work alongside the ACSC to investigate what has happened.
 
 ### GS-0
 * Press submit on this one to continue.

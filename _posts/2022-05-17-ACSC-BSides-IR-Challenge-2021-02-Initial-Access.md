@@ -7,15 +7,21 @@ image: assets/images/CTF.png
 tags: ACSC-Challenge-2021
 toc: true
 ---
+#### Post series
+In April 2021 the ACSC hosted an IR challenge at BSides Canberra. I am writing up a blog post for each of the different sections of the challenge including the tools set up. The complete listing of all the parts I've written up can be found <a target="_blank" href="{{ site.baseurl }}/tags#ACSC-Challenge-2021">here.</a>
+
+The challenge can be downloaded <a href="https://www.cyber.gov.au/acsc/view-all-content/news/acsc-cyber-security-challenge">here</a> along with all the details you need to get going. 
+<p>-----</p>
+
+## 2 - Initial Access
+
+>ALIEN are adamant that the most likely place for a malicious actor to get into their network is their public web server hosting the main website, and have seen some odd activity recently. They have provided some data from this server in zip **dmz-webpub.alien.local.zip**. We'll start by looking there.
+
 There are 5 questions in this section that are primarily focused on external facing systems and their log files. There are a few options to review the logs provided as part of the zip file, but I opted to set up Splunk and do the challenge using Splunk.
 
 Log parser is another great option to parse IIS logs.
 
 > <a href="https://attack.mitre.org/tactics/TA0001/">TA001</a> - **Initial Access** consists of techniques that use various entry vectors to gain their initial foothold within a network. Techniques used to gain a foothold include targeted spearphishing and exploiting weaknesses on public-facing web servers. Footholds gained through initial access may allow for continued access, like valid accounts and use of external remote services, or may be limited-use due to changing passwords.
-
-## 2 - Initial Access
-
->ALIEN are adamant that the most likely place for a malicious actor to get into their network is their public web server hosting the main website, and have seen some odd activity recently. They have provided some data from this server in zip **dmz-webpub.alien.local.zip**. We'll start by looking there.
 
 ### IA-1
 <h5>The actor seems to have initially failed to install themselves on the web server. What IP address did their malicious wizardry come from?</h5>

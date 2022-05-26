@@ -7,6 +7,16 @@ image: assets/images/CTF.png
 tags: ACSC-Challenge-2021
 toc: true
 ---
+
+#### Post series
+In April 2021 the ACSC hosted an IR challenge at BSides Canberra. I am writing up a blog post for each of the different sections of the challenge including the tools set up. The complete listing of all the parts I've written up can be found <a target="_blank" href="{{ site.baseurl }}/tags#ACSC-Challenge-2021">here.</a>
+
+The challenge can be downloaded <a href="https://www.cyber.gov.au/acsc/view-all-content/news/acsc-cyber-security-challenge">here</a> along with all the details you need to get going. 
+<p>-----</p>
+
+## 4 - Privilege Escalation
+>So the actor was aware that sample 2 was replicated onto CORP-WEBDEV, giving them access further into the network. What would they have done next?
+
 Once the attacker has established themselves on the network, they will look to gain additional privileges such as administrator, or admin like accounts. The questions in this section are focus on `corp-webdev.alien.local`.
 
 To complete this section I have used the following tools:
@@ -16,9 +26,6 @@ To complete this section I have used the following tools:
 **Note: See <a target="_blank" href="{{ site.baseurl }}/ACSC-BSides-IR-Challenge-2021-Setup/" target="_blank">this page </a>for tool set up and explanations.**
 
 > <a target="_blank" href="https://attack.mitre.org/tactics/TA0004/">TA004</a> - **Privilege Escalation** consists of techniques that adversaries use to gain higher-level permissions on a system or network. Adversaries can often enter and explore a network with unprivileged access but require elevated permissions to follow through on their objectives. Common approaches are to take advantage of system weaknesses, misconfigurations, and vulnerabilities.These techniques often overlap with Persistence techniques, as OS features that let an adversary persist can execute in an elevated context.
-
-## 4 - Privilege Escalation
->So the actor was aware that sample 2 was replicated onto CORP-WEBDEV, giving them access further into the network. What would they have done next?
 
 ### PE-1
 <h5>It looks like the actor ran some more reconnaissance commands and, once again, forgot to clean up after themselves. What time (UTC) was the file containing the command's output created?</h5>

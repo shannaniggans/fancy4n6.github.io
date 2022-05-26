@@ -7,6 +7,16 @@ image: assets/images/CTF.png
 tags: ACSC-Challenge-2021
 toc: true
 ---
+
+#### Post series
+In April 2021 the ACSC hosted an IR challenge at BSides Canberra. I am writing up a blog post for each of the different sections of the challenge including the tools set up. The complete listing of all the parts I've written up can be found <a target="_blank" href="{{ site.baseurl }}/tags#ACSC-Challenge-2021">here.</a>
+
+The challenge can be downloaded <a href="https://www.cyber.gov.au/acsc/view-all-content/news/acsc-cyber-security-challenge">here</a> along with all the details you need to get going. 
+<p>-----</p>
+
+## 3 - Lateral Movement
+>Having found evidence of malicious activity on their web server, ALIEN are concerned about what the actor did next. Maybe they tried to move further into the network.
+
 Once the attacker has access to an internet facing system they will look to move around the network some more. Several folders with artefacts have been provided from additional systems and for this part of the challenge we focus on `dmz-webpub.alien.local` and `corp-webdev.alien.local`. So first up ensure that you have unzipped the relevant archives to begin.
 
 To complete this section I have used the following tools:
@@ -16,9 +26,6 @@ To complete this section I have used the following tools:
 **Note: See <a href="{{ site.baseurl }}/ACSC-BSides-IR-Challenge-2021-Setup/" target="_blank">this page </a>for tool set up and explanations.**
 
 > <a href="https://attack.mitre.org/tactics/TA0008/">TA008</a> - **Lateral movement** consists of techniques that adversaries use to enter and control remote systems on a network. Following through on their primary objective often requires exploring the network to find their target and subsequently gaining access to it. Reaching their objective often involves pivoting through multiple systems and accounts to gain. Adversaries might install their own remote access tools to accomplish Lateral Movement or use legitimate credentials with native network and operating system tools, which may be stealthier.
-
-## 3 - Lateral Movement
->Having found evidence of malicious activity on their web server, ALIEN are concerned about what the actor did next. Maybe they tried to move further into the network.
 
 ### LM-1
 <h5>Shortly after dropping sample 2 on disk, the actor seems to have downloaded an interesting looking file. What process does this file relate to?</h5>
