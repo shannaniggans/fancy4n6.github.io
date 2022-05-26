@@ -13,6 +13,8 @@ To complete this section I have used the following tools:
 * Splunk
 * Eric Zimmerman Tools - MFTECmd.exe
 
+**Note: See <a href="{{ site.baseurl }}/ACSC-BSides-IR-Challenge-2021-Setup/" target="_blank">this page </a>for tool set up and explanations.**
+
 > <a href="https://attack.mitre.org/tactics/TA0008/">TA008</a> - **Lateral movement** consists of techniques that adversaries use to enter and control remote systems on a network. Following through on their primary objective often requires exploring the network to find their target and subsequently gaining access to it. Reaching their objective often involves pivoting through multiple systems and accounts to gain. Adversaries might install their own remote access tools to accomplish Lateral Movement or use legitimate credentials with native network and operating system tools, which may be stealthier.
 
 ## 3 - Lateral Movement
