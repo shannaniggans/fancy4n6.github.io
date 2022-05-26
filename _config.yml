@@ -3,8 +3,6 @@ title: "Fancy Forensics"
 description: "Digital forensics & incident response research and writeups."
 logo: 'assets/images/fancy4n6-header.png'
 baseurl: ""
-google_analytics: 'G-WV2F0X9QJ6'
-# disqus: 'demowebsite'
 include: ["_pages"]
 permalink: /:year/:month/:day/:title/
 
