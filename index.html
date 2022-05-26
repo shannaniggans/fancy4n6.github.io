@@ -5,26 +5,159 @@ title: Home
 
 {% if page.url == "/" %}
 
-<!-- Featured
-================================================== -->
-<section class="featured-posts">
+<!-- Begin post excerpts, let's highlight the first 4 posts on top -->
+
     <div class="section-title">
-        <h2><span>Featured</span></h2>
+    
+        <h2><span>Latest Posts</span></h2>
+    
     </div>
-    <div class="row">
+<div class="row remove-site-content-margin">
 
-    {% for post in site.posts %}
+    <!-- latest post -->
+    {% assign latest_post = site.posts[0] %}
+    <div class="col-md-4">
+        <div class="card border-0 mb-4 box-shadow">
+            <a href="{{site.baseurl}}{{latest_post.url}}">
+                <div class="topfirstimage" style="background-image: url({% if latest_post.image contains " ://" %}{{
+                    latest_post.image }}{% else %} {{site.baseurl}}/{{ latest_post.image}}{% endif %}); height: 250px;
+                    background-size: fit; background-repeat: no-repeat;"></div>
+            </a>
+            <div class="card-body px-0 pb-0 d-flex flex-column align-items-start">
+                <h2 class="h4 font-weight-bold">
+                    <a class="text-dark" href="{{site.baseurl}}{{latest_post.url}}">{{ latest_post.title }}</a>
+                </h2>
+                <p class="excerpt">
+                    {{ latest_post.excerpt | strip_html | strip_newlines | truncate: 136 }}
+                </p>
+                <div>
+                    <small class="text-muted">
+                        {{ latest_post.date | date: '%b %d, %Y' }}
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        {% if post.featured == true %}
+    <div class="col-md-4">
 
-            {% include featuredbox.html %}
+        <!-- second latest post -->
+        {%- assign second_post = site.posts[1] -%}
+        <div class="mb-3 d-flex align-items-center">
+            {% if second_post.image %}
+            <div class="col-md-4">
+                <a href="{{site.baseurl}}{{second_post.url}}">
+                    <img class="w-100" src="{% if second_post.image contains " ://" %}{{ second_post.image }}{% else
+                        %}{{ second_post.image | absolute_url }}{% endif %}" alt="{{ second_post.title }}">
+                </a>
+            </div>
+            {% endif %}
+            <div>
+                <h2 class="mb-2 h6 font-weight-bold">
+                    <a class="text-dark" href="{{site.baseurl}}{{second_post.url}}">{{ second_post.title }}</a>
+                </h2>
+                <small class="text-muted">
+                    {{ second_post.date | date: '%b %d, %Y' }}
+                </small>
+            </div>
+        </div>
 
-        {% endif %}
+        <!-- third latest post -->
+        {%- assign third_post = site.posts[2] -%}
+        <div class="mb-3 d-flex align-items-center">
+            {% if third_post.image %}
+            <div class="col-md-4">
+                <a href="{{site.baseurl}}{{third_post.url}}">
+                    <img class="w-100" src="{% if third_post.image contains " ://" %}{{ third_post.image }}{% else
+                        %}{{site.baseurl}}/{{ third_post.image }}{% endif %}" alt="{{ third_post.title }}">
+                </a>
+            </div>
+            {% endif %}
+            <div>
+                <h2 class="mb-2 h6 font-weight-bold">
+                    <a class="text-dark" href="{{site.baseurl}}{{third_post.url}}">{{ third_post.title }}</a>
+                </h2>
+                <small class="text-muted">
+                    {{ third_post.date | date: '%b %d, %Y' }}
+                </small>
+            </div>
+        </div>
 
-    {% endfor %}
+        <!-- fourth latest post -->
+        {%- assign fourth_post = site.posts[3] -%}
+        <div class="mb-3 d-flex align-items-center">
+            {% if fourth_post.image %}
+            <div class="col-md-4">
+                <a href="{{site.baseurl}}{{fourth_post.url}}">
+                    <img class="w-100" src="{% if fourth_post.image contains " ://" %}{{ fourth_post.image }}{% else
+                        %}{{site.baseurl}}/{{ fourth_post.image }}{% endif %}" alt="{{ fourth_post.title }}">
+                </a>
+            </div>
+            {% endif %}
+            <div>
+                <h2 class="mb-2 h6 font-weight-bold">
+                    <a class="text-dark" href="{{site.baseurl}}{{fourth_post.url}}">{{ fourth_post.title }}</a>
+                </h2>
+                <small class="text-muted">
+                    {{ fourth_post.date | date: '%b %d, %Y' }}
+                </small>
+            </div>
+        </div>
+
+        <!-- fifth latest post -->
+        {%- assign fifth_post = site.posts[4] -%}
+        <div class="mb-3 d-flex align-items-center">
+            {% if fifth_post.image %}
+            <div class="col-md-4">
+                <a href="{{site.baseurl}}{{fifth_post.url}}">
+                    <img class="w-100" src="{% if fifth_post.image contains " ://" %}{{ fifth_post.image }}{% else
+                        %}{{site.baseurl}}/{{ fifth_post.image }}{% endif %}" alt="{{ fifth_post.title }}">
+                </a>
+            </div>
+            {% endif %}
+            <div>
+                <h2 class="mb-2 h6 font-weight-bold">
+                    <a class="text-dark" href="{{site.baseurl}}{{fifth_post.url}}">{{ fifth_post.title }}</a>
+                </h2>
+                <small class="text-muted">
+                    {{ fifth_post.date | date: '%b %d, %Y' }}
+                </small>
+            </div>
+        </div>
 
     </div>
-</section>
+
+    <div class="col-md-4">
+        <h5 class="font-weight-bold spanborder">Round up of the {% include sidebar-ACSC-Bsides.html %}</h5>
+    </div>
+
+</div>
+
+<!-- Sticky - add sticky tag to the post you want to highlight here - tags: [sticky] -->
+{% for post in site.posts %}
+{% if post.tags contains "sticky" %}
+<div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem bg-lightblue position-relative">
+    <div class="pl-4 pr-0 h-100 tofront">
+        <div class="row justify-content-between">
+            <div class="col-md-6 pt-6 pb-6 pr-lg-4 align-self-center">
+                <h1 class="mb-3">{{post.title}}</h1>
+                <p class="mb-3 lead">
+                    {{ post.excerpt | strip_html | strip_newlines | truncate: 136 }}
+                </p>
+                <a href="{{site.baseurl}}{{post.url}}" class="btn btn-dark">Read More</a>
+            </div>
+            <div class="col-md-6 d-none d-md-block pr-0"
+                style="background-size:cover;background-image:url({{site.baseurl}}/{{ post.image }});">
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endfor %}
+
+
+
+
 
 {% endif %}
 
@@ -58,4 +191,3 @@ title: Home
     {% include pagination.html %}
 </span>
 </div>
-

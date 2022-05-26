@@ -1,0 +1,14 @@
+<div class="sticky-top sticky-top-offset">
+    <h5 class="font-weight-bold spanborder">ACSC BSides IR Challenge 2021</span></h5>
+    <ol class="font-weight-normal">
+        {% for post in site.tags.ACSC-Challenge-2021 reversed %}
+        <li class="mb-2">
+            <span>
+                <h6 class="font-weight-normal">
+                    <a href="{{site.baseurl}}{{ post.url }}" class="text-dark">{{ post.title }}</a>
+                </h6>
+            </span>
+        </li>
+        {% endfor %}
+    </ol>
+</div>

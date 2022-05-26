@@ -4,7 +4,7 @@ title: DFIR knowledge and resources
 author: shanna
 categories: Knowledge
 image: assets/images/knowledge.png
-tags: [ Getting-Started ]
+tags: [ Getting-Started, featured ]
 toc: true
 featured: true
 

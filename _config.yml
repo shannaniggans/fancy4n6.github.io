@@ -7,7 +7,7 @@ baseurl: ""
 google_analytics: 'G-WV2F0X9QJ6'
 # disqus: 'demowebsite'
 include: ["_pages"]
-permalink: /:title/
+permalink: /:year/:month/:day/:title/
 
 # Tags
 tag_dir: tag
@@ -62,3 +62,12 @@ adsense-data-ad-slot: "1363087678"
 lazyimages: "disabled"
 
 exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
+
+# Instead of adding read_time: true to each post, apply as a default in _config.yml
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      read_time: true
