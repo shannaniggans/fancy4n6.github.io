@@ -156,7 +156,7 @@ Sorting on Date and Time and finding the corresponding event to 2021-04-01 03:29
 ### PE-6
 <h5>What time (UTC) was the output of this process created on disk?</h5>
 
-Looking at the task itself in notepad - "F:\ACSC\ACSC_IR_Challenge_2021\artefacts\corp-webdev.alien.local\C\Windows\System32\Tasks" we can see a lot of information about the task in XML format, including the execution information. 
+Looking at the task itself in notepad - "..\ACSC_IR_Challenge_2021\artefacts\corp-webdev.alien.local\C\Windows\System32\Tasks" we can see a lot of information about the task in XML format, including the execution information. 
 
 ```
 <Exec>
