@@ -47,6 +47,12 @@ I am quite often asked if there are sites, training, and/or books that I would r
   <tr><td colspan="2"><h2>Books & Reading Materials<a name ="Books"></a></h2></td></tr>
   <tr><td colspan="2"><h3>Industry Reports</h3></td></tr>
     <tr> 
+        <td><h4><b><a href="https://nvlpubs.nist.gov/nistpubs/ir/2022/NIST.IR.8354-draft.pdf">Digital Investigation Techniques: A NIST Scientific Foundation Review</a></b></h4></td>
+      <td>This document is an assessment of the scientific foundations of digital forensics. We
+examined descriptions of digital investigation techniques from peer-reviewed sources,
+academic and classroom materials, technical guidance from professional organizations, and
+independently published sources.</td>
+    </tr>    <tr> 
         <td><h4><b><a href="https://www.verizon.com/business/en-au/resources/reports/dbir/)">Verizon DBIR</a></b></h4></td>
       <td>Verizon's Data Breach Investigations Report (DBIR) provides an annual analysis of security incidents and data breaches. The information and analysis are categorized by sector. Public sector organizations are key contributors to the report each year.</td>
     </tr>
