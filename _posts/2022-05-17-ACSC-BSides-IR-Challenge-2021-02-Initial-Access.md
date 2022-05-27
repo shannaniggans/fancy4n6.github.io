@@ -8,7 +8,19 @@ tags: ACSC-Challenge-2021
 toc: true
 ---
 #### Post series
-In April 2021 the ACSC hosted an IR challenge at BSides Canberra. I am writing up a blog post for each of the different sections of the challenge including the tools set up. The complete listing of all the parts I've written up can be found <a target="_blank" href="{{ site.baseurl }}/tags#ACSC-Challenge-2021">here.</a>
+In April 2021 the ACSC hosted an IR challenge at BSides Canberra. I am writing up a blog post for each of the different sections of the challenge including the tools set up. The complete listing of all the parts I've written up:
+
+<ol class="font-weight-light">
+    {% for post in site.tags.ACSC-Challenge-2021 reversed %}
+    <li class="mb-2">
+        <span>
+            <h6 class="font-weight-normal">
+                <a href="{{site.baseurl}}{{ post.url }}" class="text-dark">{{ post.title }}</a>
+            </h6>
+        </span>
+    </li>
+    {% endfor %}
+</ol>
 
 The challenge can be downloaded <a href="https://www.cyber.gov.au/acsc/view-all-content/news/acsc-cyber-security-challenge">here</a> along with all the details you need to get going. 
 <p>-----</p>
