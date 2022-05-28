@@ -30,7 +30,8 @@ So I could pretend to play along I setup an instance of ctfd locally in docker f
 Full Autopsy setup and configuration available <a href="/tools/2022/05/02/Autopsy.html">here</a>
 
 
-
+## Log Review
+### Splunk
 
 ## Memory Forensics
 ### 1. Volatility 3
@@ -65,3 +66,16 @@ Eric Zimmerman provides a PowerShell script to download and catalogue the versio
 ```
 
 ![EZTools script]({{site.baseurl}}/assets/images/posts/EZTools-setup.png)
+
+#### * MFTECmd.exe
+
+When you open the CSV, you will need to set the format for the date/time columns. I set the format for columns T -> AA as `yyyy-mm-dd hh:mm:ss.000`.
+NOTE: ensuring that you have the milliseconds represented will stop any rounding which will change your answers.
+
+
+
+
+## Excel Incident Timeline and Tracker
+
+
+https://www.crowdstrike.com/blog/crowdstrike-releases-digital-forensics-and-incident-response-tracker/
