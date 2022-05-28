@@ -150,6 +150,8 @@ Sorting on Date and Time and finding the corresponding event to 2021-04-01 03:29
 * 1/04/2021 3:29:23 AM - Task registered - `User "alien_db"  registered Task Scheduler task "\Windows NUPdate"`
 * 1/04/2021 3:30:34 AM - Launch request queued - `Task Scheduler queued instance "{9c83b591-e787-449c-92f3-3e87b1301577}"  of task "\Windows NUPdate".`
 * 1/04/2021 3:30:35 AM - Created Task Process - `Task Scheduler launch task "\Windows NUPdate" , instance "c:\sysinternals\procdump.exe"  with process ID 5372.`
+* 1/04/2021 3:30:36 AM - Action completed - `Task Scheduler successfully completed task "\Windows NUPdate" , instance "{9c83b591-e787-449c-92f3-3e87b1301577}" , action "c:\sysinternals\procdump.exe" with return code 4294967294.`
+* 1/04/2021 3:30:36 AM - Task completed - `Task Scheduler successfully finished "{9c83b591-e787-449c-92f3-3e87b1301577}" instance of the "\Windows NUPdate" task for user "CORP-WEBDEV\alien_db".`
 
 <h5>Flag: 5372</h5>
 
