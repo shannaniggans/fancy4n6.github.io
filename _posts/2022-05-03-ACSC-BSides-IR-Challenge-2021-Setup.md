@@ -7,6 +7,8 @@ image: assets/images/CTF.png
 tags: ACSC-Challenge-2021
 toc: true
 ---
+Last Updated: 29 May 2022.
+
 I was lucky enough to get to BSides Canberra in 2021, but I did not have time on the day(s) to compete on the IR challenge. But the team at the ACSC have provided the challenge in its entirety and I have been working my way through the challenges and will write up each of the different sections on how I solved the challenge and what tools I used. 
 
 Essentially this will all be using open source tools. It could be a slow process as part of this has me working on Autopsy plugins and updating them.
@@ -79,3 +81,50 @@ NOTE: ensuring that you have the milliseconds represented will stop any rounding
 
 
 https://www.crowdstrike.com/blog/crowdstrike-releases-digital-forensics-and-incident-response-tracker/
+
+
+
+
+
+
+
+
+## Evidence & artefact parsing overview.
+If you wanted to get a head start on adding the artefacts to Autopsy and parsing before getting stuck in, the following table outlines what I parsed with what from which systems.
+
+<table class="table table-striped table-sm">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">System</th>
+      <th scope="col">MFT</th>
+      <th scope="col">Eventlogs</th>
+      <th scope="col">IIS Logs</th>
+    </tr>
+  </thead>
+<tbody>
+    <tr>
+      <th scope="row">dmz-webpub</th>
+      <td>MFTECmd.exe</td>
+      <td>Autopsy</td>
+      <td>Splunk</td>
+    </tr>
+    <tr>
+      <th scope="row">corp-webdev</th>
+      <td>MFTECmd.exe</td>
+      <td><b>Autopsy ParseEvtx plugin</b><br>- Application/Security/System<br>- Microsoft-Windows-Windows Defender%4Operational.evtx<br>- Microsoft-Windows-SmbClient%4Connectivity.evtx<br>- Microsoft-Windows-SmbClient%4Security.evtx</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">corp-dc</th>
+      <td>MFTECmd.exe</td>
+      <td>Autopsy ParseEvtx plugin<br>Application/Security/System</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">corp-file</th>
+      <td>MFTECmd.exe</td>
+      <td>Autopsy ParseEvtx plugin<br>Application/Security/System<br>Microsoft-Windows-SmbClient%4Security.evtx</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
