@@ -82,6 +82,10 @@ independently published sources.</td>
       <td><h5><a href="https://www.cia.gov/resources/csi/books-monographs/psychology-of-intelligence-analysis-2/">Psychology of Intelligence Analysis</a></h5></td>
     <td>The Psychology of Intelligence Analysis has been required reading for intelligence officers studying the art and science of intelligence analysis for decades. Richards Heuer, Jr. discusses in the book how fundamental limitations in human mental processes can prompt people to jump to conclusions and employ other simplifying strategies that lead to predictably faulty judgments known as cognitive biases. These analytic mindsets cannot be avoided, but they can be overcome through the application of more structured and rigorous analytic techniques including the Analysis of Competing Hypotheses.</td>
   </tr>
+      <tr> 
+      <td><h5><a href="https://www.amazon.com.au/Spy-Moscow-Station-Counterspys-Deadly/dp/1250301165">The Spy in Moscow Station</a></h5></td>
+    <td>In the late 1970s, the National Security Agency still did not officially exist--those in the know referred to it dryly as the No Such Agency. So why, when NSA engineer Charles Gandy filed for a visa to visit Moscow, did the Russian Foreign Ministry assert with confidence that he was a spy?Outsmarting honey traps and encroaching deep enough into enemy territory to perform complicated technical investigations, Gandy accomplished his mission in Russia, but discovered more than State and CIA wanted him to know.</td>
+  </tr>
 
   <tr><td colspan="2"><h2>Free Online Training<a name ="FreeOnlineTraining"></a></h2></td></tr>
 
