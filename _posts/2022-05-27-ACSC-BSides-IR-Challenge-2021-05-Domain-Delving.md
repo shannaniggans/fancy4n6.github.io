@@ -29,8 +29,11 @@ The challenge can be downloaded <a href="https://www.cyber.gov.au/acsc/view-all-
 
 > Given the output of their process, it looks like the actor was after domain credentials! What could they have done with them?
 
-my intro bit
-`corp-webdev.alien.local`
+To begin with we are still looking at `corp-webdev.alien.local` for what the adversary did next. Having gained access and privileged accounts, we'll want to know what their next steps were and see where else they were able to get about the network. There are a few artefacts to review in this one, and a few different ways to do it, scheduled tasks, event logs, file creation and deletion, and some PowerShell to review. In this section you need to think a little bit bigger than the original evidence that we have already parsed or looked at. Pulling apart adversarial scripts and command lines can help tell us loads of the story and then point us to the right next place to look.
+
+This section also has us starting to look at `corp-dc` as we see the adversary expanding their footprint.
+
+Google is your friend, don't expect that you will know all the Windows event log IDs, or potentially every possible attack. Googling some of the clues may point you in the right direction and give you more artefacts or things to look for to verify that's actually what has occurred.
 
 > <a target="_blank" href="https://attack.mitre.org/tactics/TA0008/">TA008</a> - **Lateral Movement** consists of techniques that adversaries use to enter and control remote systems on a network. Following through on their primary objective often requires exploring the network to find their target and subsequently gaining access to it. Reaching their objective often involves pivoting through multiple systems and accounts to gain. Adversaries might install their own remote access tools to accomplish Lateral Movement or use legitimate credentials with native network and operating system tools, which may be stealthier.
 
