@@ -27,7 +27,7 @@ The challenge can be downloaded <a href="https://www.cyber.gov.au/acsc/view-all-
 
 ## 2 - Initial Access
 
->ALIEN are adamant that the most likely place for a malicious actor to get into their network is their public web server hosting the main website, and have seen some odd activity recently. They have provided some data from this server in zip **dmz-webpub.alien.local.zip**. We'll start by looking there.
+>ALIEN are adamant that the most likely place for a malicious actor to get into their network is their public web server hosting the main website, and have seen some odd activity recently. They have provided some data from this server in zip <kbd>dmz-webpub.alien.local.zip</kbd>. We'll start by looking there.
 
 There are 5 questions in this section that are primarily focused on external facing systems and their log files. There are a few options to review the logs provided as part of the zip file, but I opted to set up Splunk and do the challenge using Splunk.
 
@@ -37,7 +37,7 @@ Log parser is another great option to parse IIS logs.
 
 ### IA-1
 <h5>The actor seems to have initially failed to install themselves on the web server. What IP address did their malicious wizardry come from?</h5>
-* You can get Splunk Enterprise on a free trial license for non commercial use - https://www.splunk.com/en_us/download/get-started-with-your-free-trial.html which is handy to have for these things and to play and learn Splunk on.
+* You can get <a target="_blank" href="https://www.splunk.com/en_us/download/get-started-with-your-free-trial.html">Splunk Enterprise on a free trial license</a> for non commercial use which is handy to have for these things and to play and learn Splunk on.
 * You can upload a zip file of all the provided IIS log files to Splunk and I created an index for the challenge.
 
 1. Start by removing the local IP of 10.1.0.80 from the results:
@@ -131,16 +131,58 @@ From the MFT we know that the attacker dropped some files starting at 2021-04-01
 
 Correlating the logs we can expect that the attacker was able to use their tool via submit.aspx so the correct date time they are after relates to the time in the IIS logs and the attacker action and the first use.
 
-| Date Time           | Artefact | Info                                                                                                                        |
-| ------------------- | -------- | --------------------------------------------------------------------------------------------------------------------------- |
-| 2021-04-01 02:24:30 | IIS Logs | First time we see 13.54.35.87 in the logs                                                                                   |
-| 2021-04-01 02:46:33 | IIS Logs | First time we see 13.54.35.87 POST to /Telerik.Web.UI.WebResource.axd                                                       |
-| 2021-04-01 02:50:43 | MFT      | C:\Windows\Temp\1617245455.5314393.dll                                                                                      |
-| 2021-04-01 02:52:10 | MFT      | C:\Windows\Temp\1617245542.475716.dll                                                                                       |
-| 2021-04-01 02:55:29 | IIS Logs | First time we see 13.54.35.87 GET to /submit.aspx                                                                           |
-| 2021-04-01 02:55:30 | MFT      | .\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\a056c683\f67bca3c\App_Web_aa0aecbt.dll          |
-| 2021-04-01 02:55:30 | MFT      | .\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\a056c683\f67bca3c\submit.aspx.cdcab7d2.compiled |
-| 2021-04-01 02:55:30 | MFT      | .\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\a056c683\f67bca3c\App_Web_aa0aecbt.dll          |
+<table class="table table-striped table-sm small w-auto">
+  <caption class="figure-caption text-center">Table: Sample 2 timeline</caption>
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col" >Date/Time</th>
+      <th scope="col">Artefact</th>
+      <th scope="col">Information</th>
+    </tr>
+  </thead>
+<tbody>
+    <tr>
+      <th scope="row">2021-04-01 02:24:30</th>
+      <td>IIS Logs</td>
+      <td>First time we see 13.54.35.87 in the logs</td>
+    </tr>
+    <tr>
+      <th scope="row">2021-04-01 02:46:33</th>
+      <td>IIS Logs</td>
+      <td>First time we see 13.54.35.87 POST to /Telerik.Web.UI.WebResource.axd</td>
+    </tr>
+    <tr>
+      <th scope="row">2021-04-01 02:50:43</th>
+      <td>MFT</td>
+      <td>C:\Windows\Temp\1617245455.5314393.dll</td>
+    </tr>
+    <tr>
+      <th scope="row">2021-04-01 02:52:10</th>
+      <td>MFT</td>
+      <td>C:\Windows\Temp\1617245542.475716.dll</td>
+    </tr>
+    <tr>
+      <th scope="row">2021-04-01 02:55:29</th>
+      <td>IIS Logs</td>
+      <td>First time we see 13.54.35.87 GET to /submit.aspx</td>
+    </tr>
+    <tr>
+      <th scope="row">2021-04-01 02:55:30</th>
+      <td>MFT</td>
+      <td>.\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\a056c683\f67bca3c\App_Web_aa0aecbt.dll</td>
+    </tr>
+    <tr>
+      <th scope="row">2021-04-01 02:55:30</th>
+      <td>MFT</td>
+      <td>.\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\a056c683\f67bca3c\submit.aspx.cdcab7d2.compiled</td>
+    </tr>
+    <tr>
+      <th scope="row">2021-04-01 02:55:30</th>
+      <td>MFT</td>
+      <td>.\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\a056c683\f67bca3c\App_Web_aa0aecbt.dll</td>
+    </tr>
+  </tbody>
+</table>
 
 This is where starting to build a timeline is very handy. I usually do this as a dashboard in my excel worksheet for the particular engagement.
 
