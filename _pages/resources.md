@@ -71,6 +71,10 @@ independently published sources.</td>
     <td><h5><a target="_blank" href="https://www.amazon.com.au/gp/product/B016N80EZ8/ref=dbs_a_def_rwt_hsch_vapi_taft_p1_i0">File System Forensic Analysis</a></h5></td>
     <td>Most digital evidence is stored within the computer's file system, but understanding how file systems work is one of the most technically challenging concepts for a digital investigator because there exists little documentation. Now, security expert Brian Carrier has written the definitive reference for everyone who wants to understand and be able to testify about how file system analysis is performed.</td>
     </tr>
+  <tr> 
+    <td><h5><a target="_blank" href="https://www.amazon.com.au/Art-Memory-Forensics-Detecting-Malware/dp/1118825098/ref=asc_df_1118825098">The Art of Memory Forensics</a></h5></td>
+    <td>Memory forensics is the art of analyzing computer memory (RAM) to solve digital crimes. As a follow-up to the best seller Malware Analyst's Cookbook, experts in the fields of malware, security, and digital forensics bring you a step-by-step guide to memory forensics―now the most sought after skill in the digital forensics and incident response fields.</td>
+    </tr>
 
   <tr><td colspan="2"><h3>Other Books</h3></td></tr>
 
