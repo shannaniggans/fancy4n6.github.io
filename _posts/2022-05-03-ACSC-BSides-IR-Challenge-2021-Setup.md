@@ -113,13 +113,13 @@ If you wanted to get a head start on adding the artefacts to Autopsy and parsing
     <tr>
       <th scope="row"><kbd>dmz-webpub</kbd></th>
       <td>MFTECmd.exe</td>
-      <td>Autopsy</td>
+      <td><b>Autopsy ParseEvtx plugin</b><br>- Application/Security/System<br>- Microsoft-Windows-Windows Defender%4Operational.evtx<br>- DFS Replication.evtx</td>
       <td>Splunk</td>
     </tr>
     <tr>
       <th scope="row"><kbd>corp-webdev</kbd></th>
       <td>MFTECmd.exe</td>
-      <td><b>Autopsy ParseEvtx plugin</b><br>- Application/Security/System<br>- Microsoft-Windows-Windows Defender%4Operational.evtx<br>- Microsoft-Windows-SmbClient%4Connectivity.evtx<br>- Microsoft-Windows-SmbClient%4Security.evtx</td>
+      <td><b>Autopsy ParseEvtx plugin</b><br>- Application/Security/System<br>- Microsoft-Windows-Windows Defender%4Operational.evtx<br>- Microsoft-Windows-SmbClient%4Connectivity.evtx<br>- Microsoft-Windows-SmbClient%4Security.evtx<br>- DFS Replication.evtx</td>
       <td></td>
     </tr>
     <tr>
