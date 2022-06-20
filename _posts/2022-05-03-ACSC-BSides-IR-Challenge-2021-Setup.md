@@ -47,8 +47,9 @@ Most of the tools that I use run natively on Windows, but for those maybe functi
 **An overview of the process:**
 <ol>
 <li>Install WSL2: <a target="_blank" href="https://docs.microsoft.com/en-us/windows/wsl/install">https://docs.microsoft.com/en-us/windows/wsl/install</a></li>
-<li>From a command prompt within WSL I used the volatility wheel file to download and install the latest version of volatility3: 
-    <br><code>python3 -m pip install volatility3-2.0.0-py3-none-any.whl</code></li>
+<li>From a command prompt within WSL I used the volatility wheel file to download and install the latest version of volatility3:<br>
+    1. <code>wget https://github.com/volatilityfoundation/volatility3/releases/download/v2.0.1/volatility3-2.0.1-py3-none-any.whl</code><br>
+    2. <code>python3 -m pip install volatility3-2.0.1-py3-none-any.whl</code></li>
     <ul>
     <li>https://github.com/volatilityfoundation/volatility3/releases</li>
     <li>https://pip.pypa.io/en/latest/user_guide/installing-from-wheels</li>
