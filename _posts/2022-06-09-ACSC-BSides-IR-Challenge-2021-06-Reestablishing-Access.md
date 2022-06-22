@@ -382,5 +382,10 @@ The flag answer they gave was `8a0ff044f892d72dbfb8fe9d6a395d47` which I cannot 
 
    ![CyberChef Hash results]({{site.baseurl}}/assets/images/posts/RA-5.png)
 
-<h5>Flag: </h5>
+#### UPDATE
+With some assistance we went back to the ACSC for clarification and there was actually a new line character at the end of the webshell code that when I copied the ASCII output was not obvious. To replicate and get the answer i took the HEX, converted to ascii in cyberchef and then took the MD5.
+
+   ![CyberChef Hash results]({{site.baseurl}}/assets/images/posts/RA-6.png)
+
+<h5>Flag: 8a0ff044f892d72dbfb8fe9d6a395d47</h5>
 
